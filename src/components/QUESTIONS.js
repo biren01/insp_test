@@ -22,7 +22,8 @@ export const QUESTIONS = [
             {id: 'd', text: "IET GN3 Inspection and Testing"},
         ],
         correctAnswer: 'c',
-        explanation: " ",
+        explanation: " The Electricity at work Regulations EAWR is statutory document which means it is the law to comply with.",
+    },
     {
         id: 3,
         Question: "What factor is a major consideration when an inspector is setting inspection and testing samples?", 
@@ -33,7 +34,8 @@ export const QUESTIONS = [
             {id: 'd', text: "Likely weather conditions"},
         ],
         correctAnswer: 'b',
-        explanation: "",
+        explanation: 'AS stated in Guidance Note 3(3.8.3), a major consideration for an inspector who is deciding upon the amount of sampling required, \
+                      the quality of records such as previous test data, certification, drawing and reports, are all factors which affect the decision.',
     },
 
     {
@@ -46,7 +48,8 @@ export const QUESTIONS = [
             {id: 'd', text: "The loss of supply to an essential data system"},
         ],
         correctAnswer: 'd',
-        explanation: "",
+        explanation: " If an inspector is unable to isolate a particular circuit, then this is a limitation. \
+                       The other factors given all relate to the extent of an inspection with the exception to (b)  which simply requires the inspector to access a room at an agreed time.",
     },
     {
         id: 5,
@@ -58,7 +61,9 @@ export const QUESTIONS = [
             {id: 'd', text: "Sending a general report to the DNO"},
         ],
         correctAnswer: 'a',
-        explanation: "",
+        explanation: " Once an inspector has compiled the report for the client, the inspector must make a judgment as to the duration to the next test date. \
+                       This is then noted on the report and a notice may also be placed at the consumer's control equipment giving the date. \
+                       The duration is based on the condition of the installation, the frequency and quality of maintenance, external influences and the type of equipment.",
     },
     {
         id: 6,
@@ -70,7 +75,9 @@ export const QUESTIONS = [
             {id: 'd', text: "Those undertaking the work shall have notified the HSE in advance"},,
         ],
         correctAnswer: 'b',
-        explanation: "",
+        explanation: " Regulation 14 of the Electricity at Work Regulations states: work on or near live conductors \
+                       14. No persong shall be engaged in any work activity on so near any live conductor(other than one suitably covered with insulating material\
+                       so as to prevent danger)",
     },
     {
         id: 7,
@@ -82,7 +89,8 @@ export const QUESTIONS = [
             {id: 'd', text: "By using a device that accepts one lock having four unique keys."},,
         ],
         correctAnswer: 'd',
-        explanation: "",
+        explanation: " In order or a supply to be secured in a way that effectively protects all four inspectors, a device must be used that accepts\
+                       four locks, each having one unique key, so only when all parties are completed and satisfied, can the supply be restored",
     },
 
     {
@@ -95,7 +103,517 @@ export const QUESTIONS = [
             {id: 'd', text: "IPX4."},,
         ],
         correctAnswer: 'b',
+        explanation: " When inspecting the horizontal top surface of a distribution board for basic protection by brriers and enclosures, minimum permitted degree of IP protection is IP4X.\
+                       if the surface is generally accessible. IP4x means there is no hole in the enclosure greater than 1mm in diameter",
     }, 
 
+    {
+        id:9 ,
+        Question: "One item on an Inspection schedule requires the segregation of Band I  and Band II cables. What is a typical example of a Band I cable ?",
+            options: [
+            {id: 'a', text: "The cable supplying SELV lighting transforemer."},
+            {id: 'b', text: "The cable supplying a self contained emergency light."},
+            {id: 'c', text: "A cable supplying a 16 A BS EN 60309 socket outlet."},
+            {id: 'd', text: "A cable linking detectors on an intruderalarm system."},,
+        ],
+        correctAnswer: 'd',
+        explanation: 'Typically, the first three options are 230 V circuits and are therefore classed as Band II. A Band I circuit is one that operates at\
+                      extra-low voltages, such as intruder alarm circuits, and these must be segregated from Band II circuits. ' ,
+    },
+
+    {
+        id:10 ,
+        Question: " What is an example of a defect which is classified C1?",
+            options: [
+            {id: 'a', text: "A missing lid on trunking containing sheathed cables."},
+            {id: 'b', text: " A light switch having a damaged front exposing internal parts."},
+            {id: 'c', text: "A circuit supplying   bathroom having no RCD  protection"},
+            {id: 'd', text: "A 1.5 mm square cable protected by a 20 A circuit breaker."},,
+        ],
+        correctAnswer: 'b',
+        explanation:'If damaged switch has internal parts exposed, there is an imminent risk of electric shock and would therefore be classed as \
+                      C1: Danger present. The other options given require something else to occur for the example to become an imminent risk and are\
+                          therefore, potentially dangerous.'   
+       
+    },
+
+     {
+        id:11,
+        Question: " Which defect would be detected by the sense of hearing ?",
+            options: [
+            {id: 'a', text: "Loose neutral connection."},
+            {id: 'b', text: "Damaged cable insulation."},
+            {id: 'c', text: "Inadequate conduit fixing."},
+            {id: 'd', text: "Fault bonding conductor."},,
+        ],
+        correctAnswer: 'a',
+        explanation: 'A loose neutral connection would arc and spark creating a noise',
+    },
     
-];
+    {
+        id:12 ,
+        Question: " What is the maximum residual current setting for an RCD providing fault protection only?",
+            options: [
+            {id: 'a', text: "30 mA as stated under additional protection."},
+            {id: 'b', text: "100 mA when the RCD is a main switch."},
+            {id: 'c', text: "It depends on the value of earth fault loop impedance."},
+            {id: 'd', text: "it depends on the current rating of the circuit breaker."},,
+        ],
+        correctAnswer: 'c',
+        explanation: 'The maximum residual current setting of an RCD only providing fault protection is based on the earth fault loop impedance \
+                      of the circuit as detailed in Table 41.5  of BS 7671. Whilst many circuits may also require additional protection,\
+                       which limits the setting to 30 mA as maximum, where an RCD is providing fault protection only, this would not apply ',
+    },
+
+    {
+        id: 13,
+        Question: "What does the second number of the IP code relate to ?",
+            options: [
+            {id: 'a', text: "Ingress of dust."},
+            {id: 'b', text: "Ingress of fingers."},
+            {id: 'c', text: "Ingress of solid objects."},
+            {id: 'd', text: "Ingress of water or moisture."},,
+        ],
+        correctAnswer: 'd',
+        explanation: ' The second number of an IP code relates to the protection against water and moisture. For example, an IP code IPX4 means\
+                       the equipment id protected against splashes of water from all directions. ',
+    },
+
+     {
+        id: 14,
+        Question: " What is required following the issue of an FI code?",
+            options: [
+            {id: 'a', text: "Fault identified must be rectified immediately."},
+            {id: 'b', text: "Further Investigation required without delay."},
+            {id: 'c', text: "Further insulation bust be applied imminently."},
+            {id: 'd', text: "Faulty installation must be isolated indtantly."},,
+        ],
+        correctAnswer: 'b',
+        explanation: 'Where an FI cod is issued, it is because inspection has revealed and apparent defect that could not, \
+                      due to limitations, be fully identified and further investigation may reveal a C1  or C2 item. In this \
+                      situation, further investigation is required without delay. ',
+    },
+    
+    {
+        id: 15,
+        Question: " What percentage does Guidance Note 3 suggest as an adequate level of basic instrument accuracy?",
+            options: [
+            {id: 'a', text: "1%."},
+            {id: 'b', text: "3%."},
+            {id: 'c', text: "5%."},
+            {id: 'd', text: "7%."},,
+        ],
+        correctAnswer: 'c',
+        explanation: ' Undere the section titled instrument Accuracy within Guidance Note 3, it is recommended that basic accuracy \
+                      of 5 % is usually accurate.',
+    },
+
+    {
+        id:16 ,
+        Question: "Which value, displayed on an insulation resistance test instrument, would represent a suitable value, with no concerns,\
+                   when testing a 230 V circuit using 500 V ?",
+            options: [
+            {id: 'a', text: "0.01."},
+            {id: 'b', text: "0.50."},
+            {id: 'c', text: "1.00."},
+            {id: 'd', text: ">999."},,
+        ],
+        correctAnswer: 'd',
+        explanation: ' Most instrument will display a >999 which means the value is over the measuring range of the instrument. When \
+                       testing insulation resistance, this is considered a very high, good reading. Whilst option C displays the minimum \
+                       permissible value of insulation resistance, a value this borderline should give an inspector reason for concern.\
+                       The other two values are below the permissible minimum value and therefore unacceptable. ',
+    },
+
+
+    {
+        id:17 ,
+        Question: " What circumstances would remove the need for a ring-final continuity test during periodic testing?",
+            options: [
+            {id: 'a', text: "Where record exist and no alterations have been done."},
+            {id: 'b', text: "Where no records exist and the circuit has not been altered."},
+            {id: 'c', text: "Where the circuit is protected by and RCD but no records exist."},
+            {id: 'd', text: "Where older records exist and the circuit has been altered."},
+        ],
+        correctAnswer: 'a',
+        explanation: 'Guidance Note 3(3.10.2 Table 3.4) suggests that the rests to be made to an existing ring -final circuit would not include\
+                       a test of ring-final circuit continuity if there are records of previous tests and no changes have been made to the circuit. ',
+    },
+
+    {
+        id: 18,
+        Question: " What would most likely influence instrument accuracy, leading to more frequent checks being needed?",
+            options: [
+            {id: 'a', text: " Storing in dry site store with a constant temperature."},
+            {id: 'b', text: "Using the test instruments on very rare occasions."},
+            {id: 'c', text: "Keeping it in a van with many other tools and equipment."},
+            {id: 'd', text: "Storing it in an office cupboard and not using it often."},,
+        ],
+        correctAnswer: 'c',
+        explanation: ' Keeping test instruments in vans means that it is subjected to  vibration and differing temperature ranges. \
+                       these can all affect the accuracy of leads and instruments.',
+    },
+
+    {
+        id: 19,
+        Question: "What factor would most likely lead to tests being carried out in a sequence different to initial verification  ?",
+            options: [
+            {id: 'a', text: "The need to isolate at times suitable to the client."},
+            {id: 'b', text: "No previous test records or circuit charts present ."},
+            {id: 'c', text: "The inspection revealed many causes for concern."},
+            {id: 'd', text: "There are signs of many unrecorded additional circuits."},
+        ],
+        correctAnswer: 'a',
+        explanation: 'The range of tests would normally, in an installation having detailed records and data, be carried out in a \
+                       sequence which suits the clients needs. All the other options would potentially require full tests to be under\
+                       taken, in the recommended sequence, to establish a level of safety ',
+    },
+
+    
+{
+        id:20 ,
+        Question: " A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+                    Individual conductors connect the MET to gas installation pipework, water installlation pipework and extraneous \
+                    steel framework of the building. Each conductor is concealed at variousparts along their runs. All connections are \
+                    remote from the MET.\
+                    What What must be undertaken before the conductors are disconnected from the MET ?",
+                   
+                    
+      
+      
+        options: [
+            {id: 'a', text: "An insulation resistance test between conductor."},
+            {id: 'b', text: "The gas and water must be fully and securely isolated."},
+            {id: 'c', text: "The electrical installation is isolated from the supply ."},
+            {id: 'd', text: "A voltage check between the MET and a test earth electrode."},
+        ],
+        correctAnswer: 'c',
+        explanation: 'It is essential that an electrical installation is fully and securely isolated from the supply before\
+                      any protective bonding conductors are disconnected as there may be dangerous voltages that occur\
+                      between the electrical earth and the actual earth the extraneous parts are connected to. ',
+    },
+   
+    
+{
+        id:21 ,
+        Question: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+                    Individual conductors connect the MET to gas installation pipework, water installlation pipework and extraneous \
+                    steel framework of the building. Each conductor is concealed at variousparts along their runs. All connections are \
+                    remote from the MET.\
+                     Why are the conductors disconnected from the MET ?",
+            options: [
+            {id: 'a', text: "To ensure no dangerous potential differences occur."},
+            {id: 'b', text: " To eliminate parallel paths through other earths."},
+            {id: 'c', text: "To ensure the conductors are isolated from the supply."},
+            {id: 'd', text: "To ensure no sparks or arcs create a risk with the gas."},
+        ],
+        correctAnswer: 'b',
+        explanation: ' By disconnecting the individual conductors from the MET before they are tested, the ipen end eliminates parallel paths\
+                       through other services or cpcs. This in turn will give a reasonably accurate resistance reading for the conductor under test ',
+    },
+
+    {
+        id:22 ,
+        Question: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+                    Individual conductors connect the MET to gas installation pipework, water installlation pipework and extraneous \
+                    steel framework of the building. Each conductor is concealed at variousparts along their runs. All connections are \
+                    remote from the MET.\
+                    What instrument is used to carry out this test?",
+            options: [
+            {id: 'a', text: "Approved voltage tester."},
+            {id: 'b', text: "Low resistance ohmmeter."},
+            {id: 'c', text: "Earth Electrode tester."},
+            {id: 'd', text: "Continuity tester."},,
+        ],
+        correctAnswer: 'b',
+        explanation: 'Low resistance ohmmeter is required to get the correct reading of continuity of conductors ',
+    },
+
+    {
+        id:23 ,
+        Question: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+                    Individual conductors connect the MET to gas installation pipework, water installation pipework and extraneous \
+                    steel framework of the building. Each conductor is concealed at various parts along their runs. All connections are \
+                    remote from the MET.\
+                    What additional item would be required for this test including the consideration needed for this item ?",
+            options: [
+            {id: 'a', text: "Wandering lead where the resistance of the lead is added to the reading for the overall result."},
+            {id: 'b', text: "Proving unit to test the bonding clamp is suitably connected to the gas or water services."},
+            {id: 'c', text: "A link between line and cpc where the resistance of the link is nulled or zeroed."},
+            {id: 'd', text: "A zeroed or nulled wander lead as the conductors extend further than the standard test leads.."},,
+        ],
+        correctAnswer: 'd',
+        explanation: 'As the connections of each extraneous part if located a distance from the MET. This test needs a wander lead which is nulled\
+                     or zeroed. There is no line conductor to link to as this in not a circuit. ',
+    },
+
+    
+{
+        id: 24,
+        Question: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+                    Individual conductors connect the MET to gas installation pipework, water installation pipework and extraneous \
+                    steel framework of the building. Each conductor is concealed at various parts along their runs. All connections are \
+                    remote from the MET.\
+                    What would be the maximum expected reading for the connection to the gas, where the conductor is a 10 sq.mm calbe\
+                    having a length of 17 m, when tested on the pipe after the clamp ?",
+            options: [
+            {id: 'a', text: "0.03 ohm."},
+            {id: 'b', text: "0.05 ohm."},
+            {id: 'c', text: "0.08 ohm."},
+            {id: 'd', text: "1.05 ohm."},,
+        ],
+        correctAnswer: 'c',
+        explanation: 'According to GN 3, resistance of clamp connection to the pipe = 0.05 ohms. GN 3, Appendix B suggests that 10 sq.mm\
+                      conductor is 1.83 mOhms/m. So, (1.83X17)/1000 = 0.03 + 0.05 = 0.08 ohms',
+  },
+
+  {
+        id:25 ,
+        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
+                    What voltage is applied for this test?",
+            options: [
+            {id: 'a', text: "50 V."},
+            {id: 'b', text: "250 V."},
+            {id: 'c', text: "500 V."},
+            {id: 'd', text: "1000 V."},,
+        ],
+        correctAnswer: 'c',
+        explanation: 'As detailed in BS 7671(Table 61) , the test voltage applied to circuits operating at vlotages up o 500 V, other than\
+                       SELV or PELV, are tsted using 500 V DC.',
+  },
+
+  
+{
+        id:26 ,
+        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
+                   How is the test undertaken, to minimize disconnection of luminaires, following isolation of the supply ?",
+            options: [
+            {id: 'a', text: "At DB: all breaker and switches closed: test live to earth."},
+            {id: 'b', text: "At DB: all circuit breakers and switches open: test live to earth."},
+            {id: 'c', text: "At DB: all circuit breakers and switches open: test line to neutral."},
+            {id: 'd', text: "At DB: all circuit breakers and switches closed: test line to neutral."},,
+        ],
+        correctAnswer: 'a',
+        explanation: 'The test is conducted in DB with all circuit breakers closed, to test all circuits together, and all switches closed,\
+                       to test entire circuits. The test is undertaken between live(line and neutral together, the risk of damage to luninaires\
+                       is minimized as well as the likelihood of getting a low reading due to the connected luminaires',
+  },
+
+
+  {
+        id:27,
+        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
+                    What two factors could cause an insulation resistance value to reduce?",
+            options: [
+            {id: 'a', text: "Short circuit lengths: fewer parallel circuits."},
+            {id: 'b', text: "Long circuit lengths: fewer parallel circuits."},
+            {id: 'c', text: "Short circuit lengths: many parallel circuits."},
+            {id: 'd', text:  "Long circuit lengths: many parallel circuits."},,
+        ],
+        correctAnswer: 'd',
+        explanation: 'The longer the circuit run is, and the more circuits are in parallel to each other, the lower the insulation resistance gets',
+  },
+
+   {
+        id: 28,
+        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
+                   What would be the most appropriate action should a low overall reading be obtained?",
+            options: [
+            {id: 'a', text: "Close all circuit breakers and test at the other end of each circuit."},
+            {id: 'b', text: "Open all circuit breakers and test all lines and earths together to neutral."},
+            {id: 'c', text: "Open all circuit breakers and test individual circuit lives to earth."},
+            {id: 'd', text:  "Close all circuit breakers and test live to earth on the supply side of the main switch."},
+        ],
+        correctAnswer: 'c',
+        explanation: 'If a low value is obtained, the individual circuits should be tested to try and establish that one circuit may be casing the low reading.',
+  },
+
+
+{
+        id: 29,
+        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
+                   What should the results of this test be compared with to establish if deterioration is occurring?",
+            options: [
+            {id: 'a', text: "Table 41.2 of BS 7671."},
+            {id: 'b', text: "Table 41.4 of BS 7671."},
+            {id: 'c', text: "Manufacturer's data."},
+            {id: 'd', text:  "Previous test results."},
+        ],
+        correctAnswer: 'd',
+        explanation: 'In order to establish if deterioration is occurring, the results would be compared with previous results to see if values have reduced',
+  },
+
+   {
+        id: 30,
+        Question: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
+                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
+                   What test instrument is used for this test?",
+            options: [
+            {id: 'a', text: "Low resistance ohmmeter."},
+            {id: 'b', text: "Earth fault loop impedance tester."},
+            {id: 'c', text: "Earth electrode resistance tester."},
+            {id: 'd', text:  "Applied voltage induction tester."},
+        ],
+        correctAnswer: 'c',
+        explanation: 'As no supply is present, the test must be undertaken using an earth electrode resistance tester. If the supply was available,\
+                      the test could be carried out using an earth loop impedance tester. An instrument that uses test coils is an alternative, but\
+                      this option was not given in the question',
+  },
+
+
+  {
+        id: 31,
+        Question: "A test is to be carried out on  an earth electrode providing the means of earthing for a barn which is to be converted.\
+                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
+                  What overall distance does Guidance Note 3 suggest positioning the current test electrode?",
+            options: [
+            {id: 'a', text: "10 m."},
+            {id: 'b', text: "20 m."},
+            {id: 'c', text: "25 m."},
+            {id: 'd', text:  "30 m."},
+        ],
+        correctAnswer: 'd',
+        explanation: 'The current test electrode (C2) should be positioned 10 x the earth electrode length away from the earth electrode.\
+         As the earth electrode being tested is 3 m long, then:10 X 3 = 30 m',
+  },
+
+  {
+        id:32 ,
+        Question: "A test is to be carried out on  an earth electrode providing the means of earthing for a barn which is to be converted.\
+                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
+                  How many readings should be taken ?",
+            options: [
+            {id: 'a', text: "2."},
+            {id: 'b', text: "3."},
+            {id: 'c', text: "4."},
+            {id: 'd', text:  "5."},
+        ],
+        correctAnswer: 'b',
+        explanation: 'Guidance Note 3 (2.6.13) suggests that three readings are taken',
+  },
+
+  {
+        id:33 ,
+        Question: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
+                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
+                   What would be the maximum permitted overall reading if theinstallation is protected by a 300 mA RCD ?",
+            
+            options: [
+            {id: 'a', text: "1667 ohms."},
+            {id: 'b', text: "500 ohms."},
+            {id: 'c', text: "167 ohms."},
+            {id: 'd', text:  "100 ohms."},
+        ],
+        correctAnswer: 'c',
+        explanation: 'By using Table 41.5 of BS 7671, or by calculation, the maximum permissible value is 50/0.3=167 ohms',
+  },
+  
+  {
+        id:34 ,
+        Question: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
+                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
+                   What is the recommended percentage deviation of the reading obtained?",
+            options: [
+            {id: 'a', text: "5%."},
+            {id: 'b', text: "4%."},
+            {id: 'c', text: "3%."},
+            {id: 'd', text:  "2%."},
+        ],
+        correctAnswer: 'a',
+        explanation: 'Guidance Note 3 (2.6.13) suggests that it is inadvisable to accept readings that deviate more than 5 % from the average taken',
+  },
+
+  {
+        id: 35,
+        Question: "What must be disconnected before a test is carried out to establish external earth fault loop impedance??",
+            options: [
+            {id: 'a', text: "The supply and earthing conductor."},
+            {id: 'b', text: "The bonding and earthing conductor."},
+            {id: 'c', text: "All power circuits and their cpcs (circuit protective conductors)."},
+            {id: 'd', text:  "All lighting circuits and their cpcs (circuit protective conductors)."},
+        ],
+        correctAnswer: 'a',
+        explanation: 'For this test to be carried out safely, the supply must be disconnected before the earthing conductor is disconnected from the MET.\
+                      the reson the conductor is disconnected is to remove possible parallel paths to establish a reliable reading',                 
+  }, 
+
+  {
+        id: 36,
+        Question: "What is the maximum disconnection time for an RCD to	BS EN 61008 when tested at 1 x lΔN?",
+            options: [
+            {id: 'a', text: "40 ms."},
+            {id: 'b', text: "200 ms."},
+            {id: 'c', text: "300 ms."},
+            {id: 'd', text:  "400 ms."},
+        ],
+        correctAnswer: 'c',
+        explanation: 'Table 3A of Appendix 3 in BS 7671 gives the time current performances for RCDs, and a test at its residual current rating requires\
+                      a disconnection within 300 milliseconds',
+  },
+
+
+  {
+        id: 37,
+        Question: " What is the maximum permitted value of measured earth fault loop impedance for a 20 A radial power final-circuit protected by a BS 88-2 system E fuse?",
+            options: [
+            {id: 'a', text: "1.34 ohms."},
+            {id: 'b', text: "1.75 ohms."},
+            {id: 'c', text: "2.24 ohms."},
+            {id: 'd', text:  "3.2  ohms."},
+        ],
+        correctAnswer: 'a',
+        explanation: 'Table 41.2 of BS 7671 gives maximum permissible value as 1.68 ohms, at operating temperatures, for circuits having a disconnection time of 0.4 seconds.\
+                      The maximum measured value should not exceed 80 % of this when measured at normal temperatures so: 1.68 X 0.8 = 1.34 ohms',
+  },
+
+  {
+        id:38,
+        Question: "What is the maximum permissible value of voltage drop for a 230 V  power circuit?",
+            options: [
+            {id: 'a', text: "3 V."},
+            {id: 'b', text: "5 V."},
+            {id: 'c', text: "6.9 V."},
+            {id: 'd', text:  "11.5 V."},
+        ],
+        correctAnswer: 'd',
+        explanation: 'The maximum permissible voltage drop for a power circuit is 5 % of the supply voltage so:230 X 0.05 = 11.5 V',
+  },
+
+
+  {
+        id:39 ,
+        Question: " When should the integral test button on an RCD be operatedduring a periodic test?",
+            options: [
+            {id: 'a', text: "Before all tests."},
+            {id: 'b', text: "After instrument tests."},
+            {id: 'c', text: "When the supply is isolated."},
+            {id: 'd', text:  "During inspection and before testing."},
+        ],
+        correctAnswer: 'b',
+        explanation: 'Operating the test button can influence test results as RCD disconnection times can improve with operation so to get a true reflection of\
+                      the RCD receives, all test using the test instrument should be carried out before the operation of the test button',
+  },
+
+
+{
+        id: 40,
+        Question: " How Regularly should the test button on  an RCD be operated by the user of an installation?",
+            options: [
+            {id: 'a', text: "Every six days."},
+            {id: 'b', text: "Every three months."},
+            {id: 'c', text: "Every six months."},
+            {id: 'd', text:  "Every three years."},
+        ],
+        correctAnswer: 'c',
+        explanation: 'A notice should be present at every RCD stating that the RCD test button should be operated six monthly which, incidentally,\
+         coincides with the changing of clocks for day light saving',
+  },
+
+
+
+];  

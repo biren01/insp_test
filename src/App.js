@@ -1,48 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 import Quiz from './components/Quiz.js';
-import Result from './components/Result';
-import Review from './components/Review';
+import Result from './components/Result.js';
+import Review from './components/Review.js';
+import { QUESTIONS } from './components/QUESTIONS.js';
 
-const questions = [
-  {
-    id: 1,
-    question: "What is the capital of France?",
-    options: [
-      { id: 'a', text: "Berlin" },
-      { id: 'b', text: "Madrid" },
-      { id: 'c', text: "Paris" },
-      { id: 'd', text: "Rome" }
-    ],
-    correctAnswer: 'c',
-    explanation: "Paris is the capital and most populous city of France."
-  },
-  {
-    id: 2,
-    question: "Which React hook is used for state management?",
-    options: [
-      { id: 'a', text: "useEffect" },
-      { id: 'b', text: "useState" },
-      { id: 'c', text: "useContext" },
-      { id: 'd', text: "useReducer" }
-    ],
-    correctAnswer: 'b',
-    explanation: "useState is the primary hook for managing state in functional components."
-  },
-  {
-    id: 3,
-    question: "What does JSX stand for?",
-    options: [
-      { id: 'a', text: "JavaScript XML" },
-      { id: 'b', text: "Java Syntax Extension" },
-      { id: 'c', text: "JavaScript Extension" },
-      { id: 'd', text: "JS XML" }
-    ],
-    correctAnswer: 'a',
-    explanation: "JSX stands for JavaScript XML, which allows writing HTML-like code in JavaScript."
-  }
-];
-
+const questions = QUESTIONS.map((q) => ({ ...q, question: q.Question }));
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -130,4 +93,3 @@ function App() {
 }
 
 export default App;
-
