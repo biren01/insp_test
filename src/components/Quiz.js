@@ -6,7 +6,7 @@ const Quiz = ({ questions, currentQuestion, answers, onAnswer, onNext, onPreviou
   return (
     <div className="quiz-app">
       <header className="quiz-header">
-        <h1>React Quiz App</h1>
+        <h1>2391-52 Quiz </h1>
         <div className="progress">
           Question {currentQuestion + 1} of {questions.length}
         </div>
