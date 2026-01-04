@@ -614,6 +614,94 @@ export const QUESTIONS = [
          coincides with the changing of clocks for day light saving',
   },
 
+  {
+        id:41 ,
+        Question: "What needs to be verified during the inspection of a new installation ?",
+            
+            options: [
+            {id: 'a', text: "Fixed installation has not deteriorated."},
+            {id: 'b', text: "Fixed installation is correctly selected."},
+            {id: 'c', text: "Electrical equipment has not degraded."},
+            {id: 'd', text:  "Electrical appliances comply with BS 7671."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+
+  {
+        id: 42 ,
+        Question: "What process involves checking if an installation has deteriorated ?",
+            
+            options: [
+            {id: 'a', text: "Condition inspection."},
+            {id: 'b', text: "Initial Verification."},
+            {id: 'c', text: "Periodic Inspection and Testing."},
+            {id: 'd', text:  "Initial Inspection and Testing."},
+        ],
+        correctAnswer: 'c',
+        explanation: '',
+  },
+
+  {
+        id: 43,
+        Question: "What document must be issued following the installation of a new cooker circuit to an existing installation ?",
+            
+            options: [
+            {id: 'a', text: "Electrical installation Report."},
+            {id: 'b', text: "Electrical Installation Certificate."},
+            {id: 'c', text: "Electrical Installation Condition Report."},
+            {id: 'd', text:  "Minor Electrical Installation Works Certificate."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+
+
+{
+        id: 44,
+        Question: " What circumstance would require an Electrical Installation Condition Report to be issued?",
+            
+            options: [
+            {id: 'a', text: "Remedial work has been carried out."},
+            {id: 'b', text: "New occupier moving into a flat."},
+            {id: 'c', text: "Supermarket has been rewired."},
+            {id: 'd', text:  "New luminaires have been installed."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+
+  {
+        id: 45,
+        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.\
+                    What document must be completed following inspection and testing?",
+            
+            options: [
+            {id: 'a', text: "Electrical Installation Certificate."},
+            {id: 'b', text: "Schedule of Electrical Condition."},
+            {id: 'c', text: "Electrical Installation Condition Report."},
+            {id: 'd', text:  "Minor Electrical Installation Works Certificate."},
+        ],
+        correctAnswer: 'a',
+        explanation: '',
+  },
+
+   {
+        id: 46,
+        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.\
+                  Which non-statutory document directly relates to the process of inspection and testing?",
+            
+            options: [
+            {id: 'a', text: "ESQCR."},
+            {id: 'b', text: "GS38."},
+            {id: 'c', text: "GN3."},
+            {id: 'd', text:  "EAWR."},
+        ],
+        correctAnswer: 'c',
+        explanation: '',
+  },
 
 
 ];  
