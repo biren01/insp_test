@@ -703,5 +703,85 @@ export const QUESTIONS = [
         explanation: '',
   },
 
+  {
+        id: 47,
+        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.\
+                    Document must the Inspector use to record the new lighting circuit reference method?",
+            
+            options: [
+            {id: 'a', text: "Schedule of Circuit Detail/Test Results."},
+            {id: 'b', text: "Schedule of Inspections."},
+            {id: 'c', text: "Electrical Installation Schedule."},
+            {id: 'd', text:  "Electrical Installation Certificate."},
+        ],
+        correctAnswer: 'a',
+        explanation: '',
+  },
+
+  {
+        id: 48,
+        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.\
+                What would be the most appropriate human sense to use when inspecting the IP rating of the new lights??",
+            
+            options: [
+            {id: 'a', text: "Hearing."},
+            {id: 'b', text: "Touch."},
+            {id: 'c', text: "Smell."},
+            {id: 'd', text:  "Sight."},
+        ],
+        correctAnswer: 'd',
+        explanation: '',
+  },
+
+  {
+        id: 49,
+        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.\
+                    What is the minimum IP rating required for the new lights??",
+            
+            options: [
+            {id: 'a', text: "IPX8."},
+            {id: 'b', text: "IPX5."},
+            {id: 'c', text: "IPX4."},
+            {id: 'd', text:  "IPX2."},
+        ],
+        correctAnswer: 'c',
+        explanation: '',
+  },
+
+  {
+        id: 50,
+        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.\
+                    What would be the most appropriate action to take if the new lights do not comply with the minimum IP rating? ?",
+            
+            options: [
+            {id: 'a', text: "Record on the Schedule of Inspections."},
+            {id: 'b', text: "Rectify the issue and re-inspect."},
+            {id: 'c', text: "Notify the client without delay."},
+            {id: 'd', text:  "Record on the Electrical Installation Certificate."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+ 
+  {
+        id: 11,
+        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.\
+                    Which test must be carried out before earth fault loop impedance to ensure the installation is safe to emerges??",
+            
+            options: [
+            {id: 'a', text: "Prospective Fault current."},
+            {id: 'b', text: "Supply polarity."},
+            {id: 'c', text: "Residual current device."},
+            {id: 'd', text:  "Voltage drop."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+
 
 ];  
