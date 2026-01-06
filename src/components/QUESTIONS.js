@@ -768,7 +768,7 @@ export const QUESTIONS = [
   },
  
   {
-        id: 11,
+        id: 51,
         Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
                    The new lights will be at a height of 2.4m above the pool.\
                     Which test must be carried out before earth fault loop impedance to ensure the installation is safe to emerges??",
@@ -782,6 +782,164 @@ export const QUESTIONS = [
         correctAnswer: 'b',
         explanation: '',
   },
+
+  {
+        id: 52,
+        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+                    application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
+                     there are no test results available.\
+                     Where must the Extent and Limitations of inspection and testing be recorded? ?",
+            
+            options: [
+            {id: 'a', text: "Periodic Inspection Report Certificate."},
+            {id: 'b', text: "Electrical Installation Condition Report."},
+            {id: 'c', text: "Generic Schedule of Test Results."},
+            {id: 'd', text:  "Electrical Installation Certificate."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+
+  {
+        id: 53,
+        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+                    application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
+                     there are no test results available.\
+                    Who will be involved in setting the sampling size for this installation?",
+            
+            options: [
+            {id: 'a', text: "HSE, Inspector and Local Authority."},
+            {id: 'b', text: "Inspector, Client and HSE."},
+            {id: 'c', text: "Inspector, Client and Local Authority."},
+            {id: 'd', text:  "Client, Local Authority and HSE."},
+        ],
+        correctAnswer: 'c',
+        explanation: '',
+  },
+
+  {
+        id: 54,
+        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+                    application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
+                     there are no test results available.\
+                     What action should be taken with regard to the additional socket-outlet circuits ?",
+            
+            options: [
+            {id: 'a', text: "Both should be sampled to check compliance with BS 7671."},
+            {id: 'b', text: "One should be sampled to check compliance with BS 7671."},
+            {id: 'c', text: "Both should be fully tested to check compliance with BS 7671."},
+            {id: 'd', text:  "One should be fully inspected to check compliance with BS 7671."},
+        ],
+        correctAnswer: 'c',
+        explanation: '',
+  },
+
+  {
+        id: 55,
+        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+                    application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
+                     there are no test results available.\
+                     Which test can be carried out without the use of GS38 compliant test leads ?",
+            
+            options: [
+            {id: 'a', text: "Residual current device."},
+            {id: 'b', text: "Prospective fult current."},
+            {id: 'c', text: "Earth fault loop impedance."},
+            {id: 'd', text:  "continuity of protective conductors."},
+        ],
+        correctAnswer: 'd',
+        explanation: '',
+  },
+
+  {
+        id: 56,
+        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+                    application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
+                     there are no test results available.\
+                    Which test may be unnecessary on any existing ring-final circuits, for which previous test records are available?",
+            
+            options: [
+            {id: 'a', text: "Earth fault loop impedance."},
+            {id: 'b', text: "Ring-final circuit continuity."},
+            {id: 'c', text: "Insulation resistance."},
+            {id: 'd', text:  "Socket-outlet circuit continuity."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+
+  {
+        id: 57,
+        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.\
+                   The installation has been safely isolated for this test. What is the purpose of carrying out this test ?",
+            
+            options: [
+            {id: 'a', text: "To confirm a requirement of ADS has been met."},
+            {id: 'b', text: "To confirm exposed conductive parts are earthed."},
+            {id: 'c', text: "To confirm extraneous conductive parts are present."},
+            {id: 'd', text:  "To confirm electrical separation has been met."},
+        ],
+        correctAnswer: 'a',
+        explanation: '',
+  },
+
+  {
+        id: 58,
+        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.\
+                   The installation has been safely isolated for this test. What instrument is to be used to carry out this test? ?",
+            
+            options: [
+            {id: 'a', text: "Low Resistance ohmmeter."},
+            {id: 'b', text: "Prospective fault current tester."},
+            {id: 'c', text: "Insulation resistance tester."},
+            {id: 'd', text:  "Approved voltage indicator."},
+        ],
+        correctAnswer: 'a',
+        explanation: '',
+  },
+
+
+  {
+        id: 59,
+        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.\
+                    Why must the installation remain safely isolated whilst this test is carried out?",
+            
+            options: [
+            {id: 'a', text: "To remove the parallel path."},
+            {id: 'b', text: "To remove the risk of electric shock."},
+            {id: 'c', text: "To include parallel paths."},
+            {id: 'd', text:  "To ensure accurate test results."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+
+  {
+        id: 60,
+        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.\
+                   	Which additional piece of test equipment will be required for this test ?",
+            
+            options: [
+            {id: 'a', text: "Proving unit."},
+            {id: 'b', text: "Earth Electrode."},
+            {id: 'c', text: "Rotating disc."},
+            {id: 'd', text:  "Wander Lead."},
+        ],
+        correctAnswer: 'd',
+        explanation: '',
+  },
+
+
+
+
+
+
+
+
 
 
 ];  
