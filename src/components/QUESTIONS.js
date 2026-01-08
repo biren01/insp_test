@@ -933,11 +933,183 @@ export const QUESTIONS = [
         explanation: '',
   },
 
+  {
+    id: 61,
+    Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                The 10 mm2 conductor is 43 m long.\
+                What is the only outcome that can be recorded on the Schedule of Inspections for this conductor? ",
+    options: [
+        {
+            id: "a",
+            text: "Tick "
+        },
+        {
+            id: "b",
+            text: "N/A"
+        },
+        {
+            id: "c",
+            text: "N/V "
+        },
+        {
+            id: "d",
+            text: "Lim "
+        }
+    ],
+    correctAnswer: "a",
+    explanation: ""
+},
 
 
+{
+        id: 62,
+        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.\
+                   	...is the expected measured conductor resistance value ?",
+            
+            options: [
+            {id: 'a', text: "0.08 Ω."},
+            {id: 'b', text: "0.12 Ω."},
+            {id: 'c', text: "0.00 Ω."},
+            {id: 'd', text:  "0.05 Ω."},
+        ],
+        correctAnswer: 'a',
+        explanation: '',
+  },
+
+  {
+        id: 63,
+        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.\
+                   	Which risk to other persons must be managed when correctly undertaking this test?",
+            
+            options: [
+            {id: 'a', text: "Sharp edges."},
+            {id: 'b', text: "Trip hazard."},
+            {id: 'c', text: "Electrical shock."},
+            {id: 'd', text:  "Burfns Risk."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
 
 
+ {
+        id: 64,
+        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+                   The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
+                    The installation forms part of a public 400/230 V TN-S systeem.\
+                     What is the purpose of this test?",
+            
+            options: [
+            {id: 'a', text: "To confirm the oven will not overload the circuit."},
+            {id: 'b', text: "To confirm the cable will sta within temperature parameters."},
+            {id: 'c', text: "To confirm the protective device will operate correctly."},
+            {id: 'd', text:  "To confirm the function of the oven will not be impaired."},
+        ],
+        correctAnswer: 'd',
+        explanation: '',
+  },
 
+  {
+        id: 65,
+        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+                   The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
+                    The installation forms part of a public 400/230 V TN-S systeem.\
+                     What instrument is used for this test?",
+            
+            options: [
+            {id: 'a', text: "Low Resistance ohmmeter."},
+            {id: 'b', text: "Multi-meter."},
+            {id: 'c', text: "Approved voltage indicator."},
+            {id: 'd', text:  "PFC tester."},
+        ],
+        correctAnswer: 'a',
+        explanation: '',
+  },
+
+    {
+   id: 66,
+        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+                   The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
+                    The installation forms part of a public 400/230 V TN-S systeem.\
+                     What is the maximum percentage voltage drop allowed for this circuit?",
+            
+            options: [
+            {id: 'a', text: "8%."},
+            {id: 'b', text: "5%."},
+            {id: 'c', text: "3%."},
+            {id: 'd', text:  "6%."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
+
+  {
+     id: 67,
+        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+                   The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
+                    The installation forms part of a public 400/230 V TN-S systeem.\
+                     What is the calculated value of voltage drop?",
+            
+            options: [
+            {id: 'a', text: "14.8 V."},
+            {id: 'b', text: "11.8 V."},
+            {id: 'c', text: "13.5 V."},
+            {id: 'd', text:  "14.2 V."},
+        ],
+        correctAnswer: 'd',
+        explanation: '',
+  },
+
+  {
+         id: 68,
+        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+                   The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
+                    The installation forms part of a public 400/230 V TN-S systeem.\
+                     What is the most appropriat outcome based on the value of voltage drop?",
+            
+            options: [
+            {id: 'a', text: "Lim."},
+            {id: 'b', text: "C1."},
+            {id: 'c', text: "C2."},
+            {id: 'd', text:  "C3."},
+        ],
+        correctAnswer: 'd',
+        explanation: '',
+  },
+
+   {
+        id: 69,
+        Question: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test. The supply and installation\
+                   form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898.\
+                    What would be the effect of reversed Line-Neutral supply polarity?",
+            
+            options: [
+            {id: 'a', text: "Circuit breakers will not disconnect an earth fault loop."},
+            {id: 'b', text: "Single-pole switches will not control the load."},
+            {id: 'c', text: "Equipment will not function correctly."},
+            {id: 'd', text:  "Motors will spin in reverse direction."},
+        ],
+        correctAnswer: 'a',
+        explanation: '',
+  },
+
+  {
+        id: 70,
+        Question: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test. The supply and installation\
+                   form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898.\
+                    What instrument is used to carry out this test?",
+            
+            options: [
+            {id: 'a', text: "Insulation resistance tester."},
+            {id: 'b', text: "Low resistance ohmmeter."},
+            {id: 'c', text: "Phase rotation test instrument."},
+            {id: 'd', text:  "Approved voltage indicator."},
+        ],
+        correctAnswer: 'b',
+        explanation: '',
+  },
 
 
 
