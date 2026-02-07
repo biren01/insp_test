@@ -1,6 +1,7 @@
 export const QUESTIONS = [
     {
         id: 1,
+        scenario: "",
         Question: "What would be the common reason for a local authority requiring  a periodic inspection and testing process?",
          options: [
             {id: 'a', text: "To confirm the installation is defective or has not detereiorated over time"},
@@ -14,6 +15,7 @@ export const QUESTIONS = [
 
     {
         id: 2,
+        scenario: "",
         Question: "Which statutory document relates to the periodic inspection and testing process?",
             options: [
             {id: 'a', text: "BS 7671 IEE Wiring Regulations"},
@@ -26,6 +28,7 @@ export const QUESTIONS = [
     },
     {
         id: 3,
+        scenario: "",
         Question: "What factor is a major consideration when an inspector is setting inspection and testing samples?", 
             options: [
             {id: 'a', text: "normal  working hours"},
@@ -40,6 +43,7 @@ export const QUESTIONS = [
 
     {
         id: 4,
+        scenario: "",
         Question: "What factor could  have an impact on the limitations agreed with a client?",       
             options: [
             {id: 'a', text: "The sections of the building client occuipies"},
@@ -53,6 +57,7 @@ export const QUESTIONS = [
     },
     {
         id: 5,
+        scenario: "",
         Question: "What is a major responsibility of and inspector, based on the overall condition of an installation, following a periodic inspection?",
             options: [
             {id: 'a', text: "Setting the period to the next test date"},
@@ -67,6 +72,7 @@ export const QUESTIONS = [
     },
     {
         id: 6,
+        scenario: "",
         Question: "What does the Electricity at Work Regulations state, with regard to, working on or near live parts?",
             options: [
             {id: 'a', text: "It is permitted  if the building is occupied during the works"},
@@ -81,6 +87,7 @@ export const QUESTIONS = [
     },
     {
         id: 7,
+        scenario: "",
         Question: " At large installation is being inspected by four persons and the supply has been isolated. How should the means of isolation be secured?",
             options: [
             {id: 'a', text: "By using four notices on the installation main switch."},
@@ -95,6 +102,7 @@ export const QUESTIONS = [
 
     {
         id:8 ,
+        scenario: "",
         Question: "What is the minimum level of IP protection, for basic protection, when inspecting the accessible horizontal top surface of a distribution board ?",
             options: [
             {id: 'a', text: "IP2X."},
@@ -109,6 +117,7 @@ export const QUESTIONS = [
 
     {
         id:9 ,
+        scenario: "",
         Question: "One item on an Inspection schedule requires the segregation of Band I  and Band II cables. What is a typical example of a Band I cable ?",
             options: [
             {id: 'a', text: "The cable supplying SELV lighting transforemer."},
@@ -123,6 +132,7 @@ export const QUESTIONS = [
 
     {
         id:10 ,
+        scenario: "",
         Question: " What is an example of a defect which is classified C1?",
             options: [
             {id: 'a', text: "A missing lid on trunking containing sheathed cables."},
@@ -139,6 +149,7 @@ export const QUESTIONS = [
 
      {
         id:11,
+        scenario: "",
         Question: " Which defect would be detected by the sense of hearing ?",
             options: [
             {id: 'a', text: "Loose neutral connection."},
@@ -152,6 +163,7 @@ export const QUESTIONS = [
     
     {
         id:12 ,
+        scenario: "",
         Question: " What is the maximum residual current setting for an RCD providing fault protection only?",
             options: [
             {id: 'a', text: "30 mA as stated under additional protection."},
@@ -167,6 +179,7 @@ export const QUESTIONS = [
 
     {
         id: 13,
+        scenario: "",
         Question: "What does the second number of the IP code relate to ?",
             options: [
             {id: 'a', text: "Ingress of dust."},
@@ -181,6 +194,7 @@ export const QUESTIONS = [
 
      {
         id: 14,
+        scenario: "",
         Question: " What is required following the issue of an FI code?",
             options: [
             {id: 'a', text: "Fault identified must be rectified immediately."},
@@ -196,6 +210,7 @@ export const QUESTIONS = [
     
     {
         id: 15,
+        scenario: "",
         Question: " What percentage does Guidance Note 3 suggest as an adequate level of basic instrument accuracy?",
             options: [
             {id: 'a', text: "1%."},
@@ -210,6 +225,7 @@ export const QUESTIONS = [
 
     {
         id:16 ,
+        scenario: "",
         Question: "Which value, displayed on an insulation resistance test instrument, would represent a suitable value, with no concerns,\
                    when testing a 230 V circuit using 500 V ?",
             options: [
@@ -228,6 +244,7 @@ export const QUESTIONS = [
 
     {
         id:17 ,
+        scenario: "",
         Question: " What circumstances would remove the need for a ring-final continuity test during periodic testing?",
             options: [
             {id: 'a', text: "Where record exist and no alterations have been done."},
@@ -242,6 +259,7 @@ export const QUESTIONS = [
 
     {
         id: 18,
+        scenario: "",
         Question: " What would most likely influence instrument accuracy, leading to more frequent checks being needed?",
             options: [
             {id: 'a', text: " Storing in dry site store with a constant temperature."},
@@ -256,6 +274,7 @@ export const QUESTIONS = [
 
     {
         id: 19,
+        scenario: "",
         Question: "What factor would most likely lead to tests being carried out in a sequence different to initial verification  ?",
             options: [
             {id: 'a', text: "The need to isolate at times suitable to the client."},
@@ -272,11 +291,11 @@ export const QUESTIONS = [
     
 {
         id:20 ,
-        Question: " A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+        scenario: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
                     Individual conductors connect the MET to gas installation pipework, water installlation pipework and extraneous \
                     steel framework of the building. Each conductor is concealed at variousparts along their runs. All connections are \
-                    remote from the MET.\
-                    What What must be undertaken before the conductors are disconnected from the MET ?",
+                    remote from the MET.",
+        Question: " What must be undertaken before the conductors are disconnected from the MET ?",
                    
                     
       
@@ -296,11 +315,11 @@ export const QUESTIONS = [
     
 {
         id:21 ,
-        Question: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+        scenario: " A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
                     Individual conductors connect the MET to gas installation pipework, water installlation pipework and extraneous \
                     steel framework of the building. Each conductor is concealed at variousparts along their runs. All connections are \
-                    remote from the MET.\
-                     Why are the conductors disconnected from the MET ?",
+                    remote from the MET.",
+        Question:"Why are the conductors disconnected from the MET ?",
             options: [
             {id: 'a', text: "To ensure no dangerous potential differences occur."},
             {id: 'b', text: " To eliminate parallel paths through other earths."},
@@ -314,11 +333,11 @@ export const QUESTIONS = [
 
     {
         id:22 ,
-        Question: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+        scenario: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
                     Individual conductors connect the MET to gas installation pipework, water installlation pipework and extraneous \
                     steel framework of the building. Each conductor is concealed at variousparts along their runs. All connections are \
-                    remote from the MET.\
-                    What instrument is used to carry out this test?",
+                    remote from the MET ",
+        Question: "What instrument is used to carry out this test?",
             options: [
             {id: 'a', text: "Approved voltage tester."},
             {id: 'b', text: "Low resistance ohmmeter."},
@@ -331,11 +350,11 @@ export const QUESTIONS = [
 
     {
         id:23 ,
-        Question: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+        scenario:"A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
                     Individual conductors connect the MET to gas installation pipework, water installation pipework and extraneous \
                     steel framework of the building. Each conductor is concealed at various parts along their runs. All connections are \
-                    remote from the MET.\
-                    What additional item would be required for this test including the consideration needed for this item ?",
+                    remote from the MET.",
+        Question: "What additional item would be required for this test including the consideration needed for this item ?",
             options: [
             {id: 'a', text: "Wandering lead where the resistance of the lead is added to the reading for the overall result."},
             {id: 'b', text: "Proving unit to test the bonding clamp is suitably connected to the gas or water services."},
@@ -350,11 +369,11 @@ export const QUESTIONS = [
     
 {
         id: 24,
-        Question: "A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
+        scenario: " A continuity test is to be conducted to the main protective bonding conductors in large industrial installations\
                     Individual conductors connect the MET to gas installation pipework, water installation pipework and extraneous \
                     steel framework of the building. Each conductor is concealed at various parts along their runs. All connections are \
-                    remote from the MET.\
-                    What would be the maximum expected reading for the connection to the gas, where the conductor is a 10 sq.mm calbe\
+                    remote from the MET.",
+        Question: "What would be the maximum expected reading for the connection to the gas, where the conductor is a 10 sq.mm calbe\
                     having a length of 17 m, when tested on the pipe after the clamp ?",
             options: [
             {id: 'a', text: "0.03 ohm."},
@@ -369,9 +388,9 @@ export const QUESTIONS = [
 
   {
         id:25 ,
-        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
-                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
-                    What voltage is applied for this test?",
+        scenario: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches",
+        Question: " What voltage is applied for this test?",
             options: [
             {id: 'a', text: "50 V."},
             {id: 'b', text: "250 V."},
@@ -386,9 +405,9 @@ export const QUESTIONS = [
   
 {
         id:26 ,
-        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
-                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
-                   How is the test undertaken, to minimize disconnection of luminaires, following isolation of the supply ?",
+        scenario: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches",
+        Question: " How is the test undertaken, to minimize disconnection of luminaires, following isolation of the supply ?",
             options: [
             {id: 'a', text: "At DB: all breaker and switches closed: test live to earth."},
             {id: 'b', text: "At DB: all circuit breakers and switches open: test live to earth."},
@@ -404,9 +423,9 @@ export const QUESTIONS = [
 
   {
         id:27,
-        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
-                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
-                    What two factors could cause an insulation resistance value to reduce?",
+        scenario: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches",
+        Question: " What two factors could cause an insulation resistance value to reduce?",
             options: [
             {id: 'a', text: "Short circuit lengths: fewer parallel circuits."},
             {id: 'b', text: "Long circuit lengths: fewer parallel circuits."},
@@ -419,9 +438,9 @@ export const QUESTIONS = [
 
    {
         id: 28,
-        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
-                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
-                   What would be the most appropriate action should a low overall reading be obtained?",
+        scenario: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches",
+        Question: "What would be the most appropriate action should a low overall reading be obtained?",
             options: [
             {id: 'a', text: "Close all circuit breakers and test at the other end of each circuit."},
             {id: 'b', text: "Open all circuit breakers and test all lines and earths together to neutral."},
@@ -435,9 +454,9 @@ export const QUESTIONS = [
 
 {
         id: 29,
-        Question: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
-                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches\
-                   What should the results of this test be compared with to establish if deterioration is occurring?",
+        scenario: "An insulation resistance test is to be carried out on an existing 230 V single-phase distribution board which supplies ten \
+                   general purpose lighting circuits in an office. The lighting circuits all have modular luminaires controlled by the modular switches",
+        Question: "What should the results of this test be compared with to establish if deterioration is occurring?",
             options: [
             {id: 'a', text: "Table 41.2 of BS 7671."},
             {id: 'b', text: "Table 41.4 of BS 7671."},
@@ -450,9 +469,9 @@ export const QUESTIONS = [
 
    {
         id: 30,
-        Question: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
-                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
-                   What test instrument is used for this test?",
+            scenario: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
+                       The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.",
+        Question: "What test instrument is used for this test?",
             options: [
             {id: 'a', text: "Low resistance ohmmeter."},
             {id: 'b', text: "Earth fault loop impedance tester."},
@@ -468,9 +487,9 @@ export const QUESTIONS = [
 
   {
         id: 31,
-        Question: "A test is to be carried out on  an earth electrode providing the means of earthing for a barn which is to be converted.\
-                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
-                  What overall distance does Guidance Note 3 suggest positioning the current test electrode?",
+        scenario: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
+                   The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.",
+        Question: "What overall distance does Guidance Note 3 suggest positioning the current test electrode?",
             options: [
             {id: 'a', text: "10 m."},
             {id: 'b', text: "20 m."},
@@ -484,9 +503,9 @@ export const QUESTIONS = [
 
   {
         id:32 ,
-        Question: "A test is to be carried out on  an earth electrode providing the means of earthing for a barn which is to be converted.\
-                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
-                  How many readings should be taken ?",
+        scenario: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
+                   The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.",
+        Question: "How many readings should be taken ?",
             options: [
             {id: 'a', text: "2."},
             {id: 'b', text: "3."},
@@ -499,9 +518,9 @@ export const QUESTIONS = [
 
   {
         id:33 ,
-        Question: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
-                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
-                   What would be the maximum permitted overall reading if theinstallation is protected by a 300 mA RCD ?",
+        scenario: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
+                     The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.",
+        Question: " What would be the maximum permitted overall reading if theinstallation is protected by a 300 mA RCD ?",
             
             options: [
             {id: 'a', text: "1667 ohms."},
@@ -515,9 +534,9 @@ export const QUESTIONS = [
   
   {
         id:34 ,
-        Question: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
-                  The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.\
-                   What is the recommended percentage deviation of the reading obtained?",
+        scenario: "A test is to be carried out on an earth electrode providing the means of earthing for a barn which is to be converted.\
+                    The supply to the barn is currently unavailable. The electrode is a 3 m rod type electrode.",   
+        Question: "What is the recommended percentage deviation of the reading obtained?",
             options: [
             {id: 'a', text: "5%."},
             {id: 'b', text: "4%."},
@@ -530,6 +549,7 @@ export const QUESTIONS = [
 
   {
         id: 35,
+        scenario: "",
         Question: "What must be disconnected before a test is carried out to establish external earth fault loop impedance??",
             options: [
             {id: 'a', text: "The supply and earthing conductor."},
@@ -544,6 +564,7 @@ export const QUESTIONS = [
 
   {
         id: 36,
+        scenario: "",
         Question: "What is the maximum disconnection time for an RCD to	BS EN 61008 when tested at 1 x lΔN?",
             options: [
             {id: 'a', text: "40 ms."},
@@ -559,6 +580,7 @@ export const QUESTIONS = [
 
   {
         id: 37,
+        scenario: "",
         Question: " What is the maximum permitted value of measured earth fault loop impedance for a 20 A radial power final-circuit protected by a BS 88-2 system E fuse?",
             options: [
             {id: 'a', text: "1.34 ohms."},
@@ -573,6 +595,7 @@ export const QUESTIONS = [
 
   {
         id:38,
+        scenario: "",
         Question: "What is the maximum permissible value of voltage drop for a 230 V  power circuit?",
             options: [
             {id: 'a', text: "3 V."},
@@ -587,6 +610,7 @@ export const QUESTIONS = [
 
   {
         id:39 ,
+        scenario: "",   
         Question: " When should the integral test button on an RCD be operatedduring a periodic test?",
             options: [
             {id: 'a', text: "Before all tests."},
@@ -602,6 +626,7 @@ export const QUESTIONS = [
 
 {
         id: 40,
+        scenario: "",
         Question: " How Regularly should the test button on  an RCD be operated by the user of an installation?",
             options: [
             {id: 'a', text: "Every six days."},
@@ -616,6 +641,7 @@ export const QUESTIONS = [
 
   {
         id:41 ,
+        scenario: "",
         Question: "What needs to be verified during the inspection of a new installation ?",
             
             options: [
@@ -630,6 +656,7 @@ export const QUESTIONS = [
 
   {
         id: 42 ,
+        scenario: "",
         Question: "What process involves checking if an installation has deteriorated ?",
             
             options: [
@@ -644,6 +671,7 @@ export const QUESTIONS = [
 
   {
         id: 43,
+        scenario: "",
         Question: "What document must be issued following the installation of a new cooker circuit to an existing installation ?",
             
             options: [
@@ -659,6 +687,7 @@ export const QUESTIONS = [
 
 {
         id: 44,
+        scenario: "",
         Question: " What circumstance would require an Electrical Installation Condition Report to be issued?",
             
             options: [
@@ -673,9 +702,9 @@ export const QUESTIONS = [
 
   {
         id: 45,
-        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
-                   The new lights will be at a height of 2.4m above the pool.\
-                    What document must be completed following inspection and testing?",
+        scenario: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.",
+        Question: "What document must be completed following inspection and testing?",
             
             options: [
             {id: 'a', text: "Electrical Installation Certificate."},
@@ -689,9 +718,9 @@ export const QUESTIONS = [
 
    {
         id: 46,
-        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
-                   The new lights will be at a height of 2.4m above the pool.\
-                  Which non-statutory document directly relates to the process of inspection and testing?",
+        scenario: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.",
+        Question: "Which non-statutory document directly relates to the process of inspection and testing?",
             
             options: [
             {id: 'a', text: "ESQCR."},
@@ -705,9 +734,9 @@ export const QUESTIONS = [
 
   {
         id: 47,
-        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
-                   The new lights will be at a height of 2.4m above the pool.\
-                    Document must the Inspector use to record the new lighting circuit reference method?",
+        scenario: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.",
+        Question: "Document must the Inspector use to record the new lighting circuit reference method?",
             
             options: [
             {id: 'a', text: "Schedule of Circuit Detail/Test Results."},
@@ -721,9 +750,9 @@ export const QUESTIONS = [
 
   {
         id: 48,
-        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
-                   The new lights will be at a height of 2.4m above the pool.\
-                What would be the most appropriate human sense to use when inspecting the IP rating of the new lights??",
+        scenario: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.",
+        Question: "What would be the most appropriate human sense to use when inspecting the IP rating of the new lights??",
             
             options: [
             {id: 'a', text: "Hearing."},
@@ -737,9 +766,9 @@ export const QUESTIONS = [
 
   {
         id: 49,
-        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
-                   The new lights will be at a height of 2.4m above the pool.\
-                    What is the minimum IP rating required for the new lights??",
+        scenario: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.", 
+        Question: "What is the minimum IP rating required for the new lights??",
             
             options: [
             {id: 'a', text: "IPX8."},
@@ -753,9 +782,9 @@ export const QUESTIONS = [
 
   {
         id: 50,
-        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
-                   The new lights will be at a height of 2.4m above the pool.\
-                    What would be the most appropriate action to take if the new lights do not comply with the minimum IP rating? ?",
+        scenario: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.",
+        Question: " What would be the most appropriate action to take if the new lights do not comply with the minimum IP rating? ?",
             
             options: [
             {id: 'a', text: "Record on the Schedule of Inspections."},
@@ -769,9 +798,9 @@ export const QUESTIONS = [
  
   {
         id: 51,
-        Question: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
-                   The new lights will be at a height of 2.4m above the pool.\
-                    Which test must be carried out before earth fault loop impedance to ensure the installation is safe to emerges??",
+            scenario: "Refurbishment of a leisure center with a swimming pool is taking place. An additional lighting circuit is to be installed.\
+                   The new lights will be at a height of 2.4m above the pool.",
+        Question: " Which test must be carried out before earth fault loop impedance to ensure the installation is safe to emerges??",
             
             options: [
             {id: 'a', text: "Prospective Fault current."},
@@ -785,10 +814,10 @@ export const QUESTIONS = [
 
   {
         id: 52,
-        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+        scenario: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
                     application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
-                     there are no test results available.\
-                     Where must the Extent and Limitations of inspection and testing be recorded? ?",
+                     there are no test results available.",
+        Question: "Where must the Extent and Limitations of inspection and testing be recorded? ?",
             
             options: [
             {id: 'a', text: "Periodic Inspection Report Certificate."},
@@ -802,10 +831,10 @@ export const QUESTIONS = [
 
   {
         id: 53,
-        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
-                    application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
-                     there are no test results available.\
-                    Who will be involved in setting the sampling size for this installation?",
+        scenario: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\                    application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
+                   application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
+                   there are no test results available.",
+        Question: " Who will be involved in setting the sampling size for this installation?",
             
             options: [
             {id: 'a', text: "HSE, Inspector and Local Authority."},
@@ -819,10 +848,10 @@ export const QUESTIONS = [
 
   {
         id: 54,
-        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+        scenario: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\                    application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
                     application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
-                     there are no test results available.\
-                     What action should be taken with regard to the additional socket-outlet circuits ?",
+                    there are no test results available.",
+        Question: "What action should be taken with regard to the additional socket-outlet circuits ?",
             
             options: [
             {id: 'a', text: "Both should be sampled to check compliance with BS 7671."},
@@ -836,10 +865,10 @@ export const QUESTIONS = [
 
   {
         id: 55,
-        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+        scenario: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
                     application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
-                     there are no test results available.\
-                     Which test can be carried out without the use of GS38 compliant test leads ?",
+                     there are no test results available.",
+        Question: "Which test can be carried out without the use of GS38 compliant test leads ?",
             
             options: [
             {id: 'a', text: "Residual current device."},
@@ -853,10 +882,10 @@ export const QUESTIONS = [
 
   {
         id: 56,
-        Question: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
+        scenario: "The existing installation in a hotel is to be inspected and tested as a requirement of the local authority for a public entertainment license\
                     application. Previous inspection and testing records exist but two additional socket-outlet circuits have previously been installed for which\
-                     there are no test results available.\
-                    Which test may be unnecessary on any existing ring-final circuits, for which previous test records are available?",
+                     there are no test results available.",
+        Question: "Which test may be unnecessary on any existing ring-final circuits, for which previous test records are available?",
             
             options: [
             {id: 'a', text: "Earth fault loop impedance."},
@@ -870,9 +899,10 @@ export const QUESTIONS = [
 
   {
         id: 57,
-        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+        scenario: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
                    The 10 mm2 conductor is 43m long.\
-                   The installation has been safely isolated for this test. What is the purpose of carrying out this test ?",
+                   The installation has been safely isolated for this test.",
+        Question: "What is the purpose of carrying out this test ?",
             
             options: [
             {id: 'a', text: "To confirm a requirement of ADS has been met."},
@@ -886,9 +916,10 @@ export const QUESTIONS = [
 
   {
         id: 58,
-        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+        scenario: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
                    The 10 mm2 conductor is 43m long.\
-                   The installation has been safely isolated for this test. What instrument is to be used to carry out this test? ?",
+                   The installation has been safely isolated for this test.",
+        Question: " What instrument is to be used to carry out this test ?",
             
             options: [
             {id: 'a', text: "Low Resistance ohmmeter."},
@@ -903,9 +934,9 @@ export const QUESTIONS = [
 
   {
         id: 59,
-        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
-                   The 10 mm2 conductor is 43m long.\
-                    Why must the installation remain safely isolated whilst this test is carried out?",
+        scenario: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.",
+        Question: "Why must the installation remain safely isolated whilst this test is carried out?",
             
             options: [
             {id: 'a', text: "To remove the parallel path."},
@@ -919,9 +950,9 @@ export const QUESTIONS = [
 
   {
         id: 60,
-        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
-                   The 10 mm2 conductor is 43m long.\
-                   	Which additional piece of test equipment will be required for this test ?",
+        scenario: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.",
+        Question: "Which additional piece of test equipment will be required for this test ?",
             
             options: [
             {id: 'a', text: "Proving unit."},
@@ -935,9 +966,9 @@ export const QUESTIONS = [
 
   {
     id: 61,
-    Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
-                The 10 mm2 conductor is 43 m long.\
-                What is the only outcome that can be recorded on the Schedule of Inspections for this conductor? ",
+    scenario: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+               The 10 mm2 conductor is 43 m long.",
+    Question: "What is the only outcome that can be recorded on the Schedule of Inspections for this conductor? ",
     options: [
         {
             id: "a",
@@ -963,9 +994,9 @@ export const QUESTIONS = [
 
 {
         id: 62,
-        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
-                   The 10 mm2 conductor is 43m long.\
-                   	...is the expected measured conductor resistance value ?",
+       scenario: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.",     
+        Question: "...is the expected measured conductor resistance value ?",
             
             options: [
             {id: 'a', text: "0.08 Ω."},
@@ -979,9 +1010,9 @@ export const QUESTIONS = [
 
   {
         id: 63,
-        Question: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
-                   The 10 mm2 conductor is 43m long.\
-                   	Which risk to other persons must be managed when correctly undertaking this test?",
+        scenario: "The continuity of a main protective bonding conductor to a gas installation pipe in a new primary school is to be tested.\
+                   The 10 mm2 conductor is 43m long.",
+        Question: "Which risk to other persons must be managed when correctly undertaking this test?",
             
             options: [
             {id: 'a', text: "Sharp edges."},
@@ -996,10 +1027,10 @@ export const QUESTIONS = [
 
  {
         id: 64,
-        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+        scenario: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
                    The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
-                    The installation forms part of a public 400/230 V TN-S systeem.\
-                     What is the purpose of this test?",
+                    The installation forms part of a public 400/230 V TN-S systeem.",
+        Question: "What is the purpose of this test?",
             
             options: [
             {id: 'a', text: "To confirm the oven will not overload the circuit."},
@@ -1013,10 +1044,10 @@ export const QUESTIONS = [
 
   {
         id: 65,
-        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+        scenario: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
                    The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
-                    The installation forms part of a public 400/230 V TN-S systeem.\
-                     What instrument is used for this test?",
+                    The installation forms part of a public 400/230 V TN-S systeem.",
+        Question: "What instrument is used for this test?",
             
             options: [
             {id: 'a', text: "Low Resistance ohmmeter."},
@@ -1030,10 +1061,10 @@ export const QUESTIONS = [
 
     {
    id: 66,
-        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+   scenario: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
                    The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
-                    The installation forms part of a public 400/230 V TN-S systeem.\
-                     What is the maximum percentage voltage drop allowed for this circuit?",
+                    The installation forms part of a public 400/230 V TN-S systeem.",
+        Question: "What is the maximum percentage voltage drop allowed for this circuit?",
             
             options: [
             {id: 'a', text: "8%."},
@@ -1047,10 +1078,10 @@ export const QUESTIONS = [
 
   {
      id: 67,
-        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+     scenario: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
                    The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
-                    The installation forms part of a public 400/230 V TN-S systeem.\
-                     What is the calculated value of voltage drop?",
+                    The installation forms part of a public 400/230 V TN-S systeem.",
+     Question: "What is the calculated value of voltage drop?",
             
             options: [
             {id: 'a', text: "14.8 V."},
@@ -1064,10 +1095,10 @@ export const QUESTIONS = [
 
   {
          id: 68,
-        Question: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
-                   The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
-                    The installation forms part of a public 400/230 V TN-S systeem.\
-                     What is the most appropriat outcome based on the value of voltage drop?",
+        scenario: "Voltage drop of a single-phase circuit supplying a bread oven is to be verified as part of periodic inspection and testing within a bakery.\
+                     The circuit has a measured R1+Rn value of 0.40 Ω and an Ib of 29.6 A. The circuit protective device has an In of 32A.\
+                        The installation forms part of a public 400/230 V TN-S systeem.",
+        Question: "What is the most appropriat outcome based on the value of voltage drop?",
             
             options: [
             {id: 'a', text: "Lim."},
@@ -1081,9 +1112,9 @@ export const QUESTIONS = [
 
    {
         id: 69,
-        Question: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test. The supply and installation\
-                   form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898.\
-                    What would be the effect of reversed Line-Neutral supply polarity?",
+        scenario: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test. The supply and installation\
+                   form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898.",
+        Question: "What would be the effect of reversed Line-Neutral supply polarity?",
             
             options: [
             {id: 'a', text: "Circuit breakers will not disconnect an earth fault loop."},
@@ -1097,9 +1128,9 @@ export const QUESTIONS = [
 
   {
         id: 70,
-        Question: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test. The supply and installation\
-                   form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898.\
-                    What instrument is used to carry out this test?",
+        scenario: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test. The supply and installation\
+                   form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898.",
+        Question: "What instrument is used to carry out this test?",
             
             options: [
             {id: 'a', text: "Insulation resistance tester."},
