@@ -4,19 +4,37 @@ import Quiz from './components/Quiz.js';
 import Result from './components/Result.js';
 import Review from './components/Review.js';
 import { QUESTIONS } from './components/QUESTIONS.js';
+import LandingPage from './components/landing_page.jsx'
 
-const questions = QUESTIONS.map((q) => ({ ...q, question: q.Question }));
+//const questions = QUESTIONS.map((q) => ({ ...q, question: q.Question }));
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [mode, setMode] = useState('quiz'); // 'quiz', 'result', 'review'
+  const [mode, setMode] = useState('landing'); // 'landing', 'quiz', 'result', 'review'
+  const [activeOption, setActiveOption] = useState("0-40");
   const [score, setScore] = useState(0);
+
+  // function to get initial index and last index from activeOption
+  const getQuestionRange = (option) => {
+    const [start, end] = option.split('-').map(num => parseInt(num, 10));
+    return { startIndex: start, endIndex: end };
+  };
+
+  const { startIndex, endIndex } = getQuestionRange(activeOption);
+
+  // Filter questions based on selected range
+  const questions = QUESTIONS.slice(startIndex, endIndex).map((q) => ({ ...q, question: q.Question }));
 
   const handleAnswer = (questionId, selectedOption) => {
     setAnswers(prev => ({
       ...prev,
       [questionId]: selectedOption
     }));
+  };
+
+   const goToQuiz = () => {
+    setMode('quiz');
+    //setCurrentQuestion(0); // Reset to first question when starting quiz
   };
 
   const handleNext = () => {
@@ -78,7 +96,7 @@ function App() {
       );
     
     case 'quiz':
-    default:
+    
       return (
         <Quiz
           questions={questions}
@@ -89,6 +107,18 @@ function App() {
           onPrevious={handlePrevious}
         />
       );
+
+     case 'landing':
+    default:
+  return (
+    <>
+        <LandingPage activeOption={activeOption}
+         setActiveOption={setActiveOption} 
+         onStarted={goToQuiz}     />
+        
+       
+    </>
+  );
   }
 }
 

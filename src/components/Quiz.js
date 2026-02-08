@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../App.css';
 const Quiz = ({ questions, currentQuestion, answers, onAnswer, onNext, onPrevious }) => {
   const currentQ = questions[currentQuestion];
   
@@ -13,9 +13,11 @@ const Quiz = ({ questions, currentQuestion, answers, onAnswer, onNext, onPreviou
       </header>
 
       <div className="question-container">
+        {currentQ.scenario && <div className="scenario-text">{currentQ.scenario}</div>}
         <h2 className="question-text">{currentQ.question}</h2>
         
         <div className="options-container">
+          
           {currentQ.options.map(option => (
             <div 
               key={option.id}
