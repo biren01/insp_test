@@ -1933,7 +1933,8 @@ export const QUESTIONS = [
     {
   id: 100,
     scenario: "",
-    Question: "What is the maximum rating of RCD that can be used for fault protection on this installation?",
+    Question: "What is the maximum rating of RCD that can be used for fault protection on this installation?\
+               Test1: 179 Ω, Test 2: 172 Ω, Test 3: 168 Ω",
     options: [
       {
         id: "a",
@@ -1954,7 +1955,297 @@ export const QUESTIONS = [
     ],
     correctAnswer: "c",
     explanation: ""
+  },
+
+   {
+    id: 101,
+    scenario: "",
+    Question: "What is the purpose of Initial Verification?",
+    options: [
+      {
+        id: "a",
+        text: "To confirm the installation is defective or has not deteriorated over time."
+      },
+      {
+        id: "b",
+        text: "To confirm that the contractual elements have been undertaken to ISO 9001."
+      },
+      {
+        id: "c",
+        text: "To confirm that the Client is satisfied with all the work carried out."
+      },
+      {
+        id: "d",
+        text: "To confirm the installation complies with the design or construction aspects of BS 7671"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "GN3 - Section 2.1, para 2, and BS 7671 Reg. 641.1"
+  },
+
+  {
+    id: 102,
+    scenario: "",
+    Question: "Why is Periodic Inspection and Testing carried out? ",
+    options: [
+      {
+        id: "a",
+        text: "To provide an engineering view that the installation was constructed correctly"
+      },
+      {
+        id: "b",
+        text: "To provide proof that all additions to the installation comply with current regulations "
+      },
+      {
+        id: "c",
+        text: "To provide proof that an installation complies with current regulations"
+      },
+      {
+        id: "d",
+        text: "To provide an engineering view that an installation can continue to be used safely"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "GN3, Section 3.1, para 1, and BS 7671 Reg. 651.1"
+  },
+
+   {
+    id: 103,
+    scenario: "",
+    Question: "What situation would require the issue of an Electrical Installation Condition Report? ",
+    options: [
+      {
+        id: "a",
+        text: "Changing a building use from a house to a hotel "
+      },
+      {
+        id: "b",
+        text: "Changing a radial circuit into a ring-final circuit "
+      },
+      {
+        id: "c",
+        text: "The addition of a light to an existing circuit"
+      },
+      {
+        id: "d",
+        text: "The installation of a new distribution board"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GN3, Section 3.2 (c) (iii)"
+  },
+
+   {
+    id: 104,
+    scenario: "",
+    Question: "What is the MOST suitable document to be issued by an inspector following the installation of an outdoor socket-outlet supplied from an existing ring-final circuit?",
+    options: [
+      {
+        id: "a",
+        text: "Building Controls Certificate to Part P"
+      },
+      {
+        id: "b",
+        text: "Minor Electrical Installation Works Certificate"
+      },
+      {
+        id: "c",
+        text: "Electrical Installation Certificate"
+      },
+      {
+        id: "d",
+        text: "Electrical Installation Condition Report"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "GN3, Section 5.2 explains when a MEIWC would be appropriate"
+  },
+
+  {
+    id: 105,
+    scenario: "",
+    Question: "decision does an inspector need to make when undertaking periodic inspection, which is not required during initial verification?",
+    options: [
+      {
+        id: "a",
+        text: "The suitability of test instruments"
+      },
+      {
+        id: "b",
+        text: "The type of certification to be used"
+      },
+      {
+        id: "c",
+        text: "The amount of sampling undertaken"
+      },
+      {
+        id: "d",
+        text: "The suitability of test results obtained"
+      }
+    ],
+    correctAnswer: "",
+    explanation: "GN3, Section 3.8.3 comments on setting sample sizes. You cannot use sampling on Initial Verification as this is 100% Inspection and Testing."
+  },
+
+  {
+    id: 106,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system. ",
+    Question: "What non-statutory document contains the maximum values of earth fault loop impedance at normal test temperature?",
+    options: [
+      {
+        id: "a",
+        text: "BS7671"
+      },
+      {
+        id: "b",
+        text: "IET GN3"
+      },
+      {
+        id: "c",
+        text: "HSE GS38"
+      },
+      {
+        id: "d",
+        text: "EAWR"
+      }
+    ],
+    correctAnswer: "B",
+    explanation: "Whilst values are obtained at ambient temperature, the results need to be compared with 'corrected' values, which GN3 contains.\
+    Values in BS 7671 (Chapter 41) are for conductor temperatures of 20°C, whereas GN3 accounts for conductor operating temperature of 70°C."
+  },
+
+   {
+    id: 107,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system.",
+    Question: "7.What must be carried out due to the lack of records and charts for the existing circuits?",
+    options: [
+      {
+        id: "a",
+        text: "Inspection would include cables concealed in walls"
+      },
+      {
+        id: "b",
+        text: "Inspection would include dismantling all equipment"
+      },
+      {
+        id: "c",
+        text: "tExploratory work is done to determine circuit control"
+      },
+      {
+        id: "d",
+        text: "d.small sample of circuits would be tested first"
+      }
+    ],
+    correctAnswer: "C",
+    explanation: "GN3 - various references in Section 3.8 advise on different approaches, but 3.8.3, Para 3 explains the procedure where no records exist"
+  },
+
+  {
+    id: 108,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system.",
+    Question: "What document must be used when verifying the two new socket-outlet circuits?",
+    options: [
+      {
+        id: "a",
+        text: "Electrical Installation Condition Report"
+      },
+      {
+        id: "b",
+        text: "Electrical Installation Certificate"
+      },
+      {
+        id: "c",
+        text: "Periodic Inspection and Test Report"
+      },
+      {
+        id: "d",
+        text: "Minor Work Certificate"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "GN3, Section 5.1 specifies the documents to use for the installation of new circuits - EIC"
+  },
+
+  {
+    id: 109,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system.",
+    
+    Question: "What inspection limitation is already noted on an EICR?",
+    options: [
+      {
+        id: "a",
+        text: "Cables in trunking and conduit"
+      },
+      {
+        id: "b",
+        text: "Cables in distribution boards"
+      },
+      {
+        id: "c",
+        text: "Surface mounted switches"
+      },
+      {
+        id: "d",
+        text: "Surface mounted cables"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "BS 7671, Appendix 6, Model Forms. The EICR, Section D contains a statement regarding concealed cables."
+  },
+
+  {
+    id: 1770588162784,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system.",
+    Question: "What would be recorded on a test result sheet as the method of fault protection for the new socket outlet circuits?",
+    options: [
+      {
+        id: "a",
+        text: "ADS"
+      },
+      {
+        id: "b",
+        text: "Class II"
+      },
+      {
+        id: "c",
+        text: "RCD"
+      },
+      {
+        id: "d",
+        text: "Class III"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "BS 7671, Appendix 6, Model Forms shows a Schedule of Test Results, but it doesn't contain a specific column for recording 'ADS'. There is a column for recording Max. Measured Zs, which relies on the earthing system, hence ADS (Automatic Disconnection of Supply)."
   }
+
+
+
+
+
+  
+
+
+
+
+
+
+
 
 
 
