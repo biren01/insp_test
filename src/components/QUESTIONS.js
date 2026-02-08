@@ -1142,6 +1142,839 @@ export const QUESTIONS = [
         explanation: '',
   },
 
+   {
+    id:71,
+    scenario: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test. The supply and installation\
+                form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898.",
+                   
+    Question: "What instrument safety check must be made before carrying out this test?",
+    options: [
+      {
+        id: "a",
+        text: "Check compliance with GS38.  "
+      },
+      {
+        id: "b",
+        text: "Check instrument within calibration."
+      },
+      {
+        id: "c",
+        text: "Check operation on a proving unit. "
+      },
+      {
+        id: "d",
+        text: "Check battery level."
+      }
+    ],
+    correctAnswer: "a",
+    explanation: ""
+  },
+
+  {
+    id:72,
+    scenario: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test. The supply and installation\
+               form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898.",
+    Question: "What voltages are to be expected if the polarity is correct?",
+    options: [
+      {
+        id: "a",
+        text: "L-N Zero V, L-E 230 V, N-E 230 V"
+      },
+      {
+        id: "b",
+        text: "L-N 230 V, L-E Zero V, N-E Zero V "
+      },
+      {
+        id: "c",
+        text: "L-N Zero V, L-E Zero V, N-E 230 V"
+      },
+      {
+        id: "d",
+        text: "L-N 230 V, L-E 230 V, N-E Zero V  "
+      }
+    ],
+    correctAnswer: "d",
+    explanation: ""
+  },
+
+   {
+    id: 73,
+    scenario: "The supply polarity of a restaurant is to be tested as part of a periodic inspection and test.\
+               The supply and installation form part of a 230 V single-phase TN-S system. Fault protection is provided by single-pole circuit breakers to BS EN 60898",
+    Question: "Why may the testing of circuit polarity be unnecessary?",
+    options: [
+      {
+        id: "a",
+        text: "Alterations have been carried out."
+      },
+      {
+        id: "b",
+        text: "No changes have been made.  "
+      },
+      {
+        id: "c",
+        text: "Additions have been installed"
+      },
+      {
+        id: "d",
+        text: "High Zs value has been recorded."
+      }
+    ],
+    correctAnswer: "b",
+    explanation: ""
+  },
+
+    {
+    id: 74,
+    scenario: "",
+    Question: "The catering unit is permanently sited and infrequently moved. What would this information help the inspector to determine?",
+    options: [
+      {
+        id: "a",
+        text: "The number of RCD tests required."
+      },
+      {
+        id: "b",
+        text: "The amount of sampling required.  "
+      },
+      {
+        id: "c",
+        text: "The number of circuits to be tested. "
+      },
+      {
+        id: "d",
+        text: "The condition of the cables."
+      }
+    ],
+    correctAnswer: "b",
+    explanation: ""
+  },
+
+  {
+    id: 75,
+    scenario: "",
+    Question: "What needs to be verified with regard to the mobile catering consumer unit?",
+    options: [
+      {
+        id: "a",
+        text: "The bottom horizontal surface complies with IP4X."
+      },
+      {
+        id: "b",
+        text: "The enclosure is made of polycarbonate."
+      },
+      {
+        id: "c",
+        text: "The RCD main switch is rated at ≥ 63 A."
+      },
+      {
+        id: "d",
+        text: "The top horizontal surface complies with IP4X.  "
+      }
+    ],
+    correctAnswer: "d",
+    explanation: ""
+  },
+
+   {
+    id: 76,
+    scenario: "",
+    Question: "What is the maximum test current applied to the RCD to confirm that fault protection is provided?",
+    options: [
+      {
+        id: "a",
+        text: "300 mA"
+      },
+      {
+        id: "b",
+        text: "60 mA"
+      },
+      {
+        id: "c",
+        text: "30 mA"
+      },
+      {
+        id: "d",
+        text: "15 mA"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+    {
+    id: 77,
+    scenario: "",
+    Question: "What is the maximum operating time of the RCD, when tested using a test current equal to the residual current rating?",
+    options: [
+      {
+        id: "a",
+        text: "300 ms"
+      },
+      {
+        id: "b",
+        text: "150 ms"
+      },
+      {
+        id: "c",
+        text: "40 ms"
+      },
+      {
+        id: "d",
+        text: "200 ms"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: ""
+  },
+
+    {
+    id: 78,
+    scenario: "",
+    Question: "The RCD is found to not operate at any test current. What is the most appropriate classification code to record?",
+    options: [
+      {
+        id: "a",
+        text: "F1"
+      },
+      {
+        id: "b",
+        text: "C1"
+      },
+      {
+        id: "c",
+        text: "C3"
+      },
+      {
+        id: "d",
+        text: "C2"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: ""
+  },
+
+  {
+    id: 79,
+    scenario: "",
+    Question: "What additional action must the inspector take regarding this observation?",
+    options: [
+      {
+        id: "a",
+        text: "Remove the portable generator until fault fixed"
+      },
+      {
+        id: "b",
+        text: "Inform the insurer in writing without delay."
+      },
+      {
+        id: "c",
+        text: "Inform the client in writing without delay. "
+      },
+      {
+        id: "d",
+        text: "Isolate the installation and prevent re-energizing."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+   {
+    id: 80,
+    scenario: "Insulation resistance has been tested on five new lighting circuits in an existing large distribution warehouse.\
+               These circuits are supplied from a new single-phase, five way DB. Switching for each circuit is by 230 V contactors.\
+               Connection to each light is made using a BS 1363 socket-outlet adjacent to the fitting. The supply and installation\
+               form a 400 V three-phase TN-C-S system.",
+    Question: "What is the correct way to prepare one of these circuits for testing?",
+    options: [
+      {
+        id: "a",
+        text: "Switch on lights, connect cpc, un-plug lights."
+      },
+      {
+        id: "b",
+        text: "Switch on lights, disconnect cpc, plug-in lights."
+      },
+      {
+        id: "c",
+        text: "Bypass contactors, connect cpc, un-plug lights.  "
+      },
+      {
+        id: "d",
+        text: "Bypass contactors, disconnect cpc, plug-in lights."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+  {
+    id: 81,
+    scenario: " Insulation resistance has been tested on five new lighting circuits in an existing large distribution warehouse.\
+               These circuits are supplied from a new single-phase, five way DB. Switching for each circuit is by 230 V contactors.\
+               Connection to each light is made using a BS 1363 socket-outlet adjacent to the fitting. The supply and installation\
+               form a 400 V three-phase TN-C-S system.",
+    Question: "What affects the insulation resistance of each circuit tested?",
+    options: [
+      {
+        id: "a",
+        text: "The csa and number of conductors."
+      },
+      {
+        id: "b",
+        text: "The csa and purpose of conductors."
+      },
+      {
+        id: "c",
+        text: "The number and the purpose of conductors.   "
+      },
+      {
+        id: "d",
+        text: "The number and length of conductors."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+   {
+    id: 82,
+    scenario: "Insulation resistance has been tested on five new lighting circuits in an existing large distribution warehouse.\
+               These circuits are supplied from a new single-phase, five way DB. Switching for each circuit is by 230 V contactors.\
+               Connection to each light is made using a BS 1363 socket-outlet adjacent to the fitting. The supply and installation\
+               form a 400 V three-phase TN-C-S system.",
+    Question: "What is the legal status of the inspector?",
+    options: [
+      {
+        id: "a",
+        text: "Competent"
+      },
+      {
+        id: "b",
+        text: "Ordinary"
+      },
+      {
+        id: "c",
+        text: "Skilled"
+      },
+      {
+        id: "d",
+        text: "Instructed"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: ""
+  },
+
+   {
+    id: 83,
+    scenario: "Insulation resistance has been tested on five new lighting circuits in an existing large distribution warehouse.\
+               These circuits are supplied from a new single-phase, five way DB. Switching for each circuit is by 230 V contactors.\
+               Connection to each light is made using a BS 1363 socket-outlet adjacent to the fitting. The supply and installation\
+               form a 400 V three-phase TN-C-S system.",
+    Question: "What condition can be detected during the insulation resistance test?",
+    options: [
+      {
+        id: "a",
+        text: "Degradation of cable insulation."
+      },
+      {
+        id: "b",
+        text: ".  Damage to cable insulation."
+      },
+      {
+        id: "c",
+        text: "Deterioration of cable insulation. "
+      },
+      {  
+        id: "d",
+        text: "De-rating of cable insulation."
+      }
+    ],
+    correctAnswer: "b",
+    explanation: ""
+  },
+
+   {
+    id: 84,
+    scenario: "Insulation resistance has been tested on five new lighting circuits in an existing large distribution warehouse.\
+               These circuits are supplied from a new single-phase, five way DB. Switching for each circuit is by 230 V contactors.\
+               Connection to each light is made using a BS 1363 socket-outlet adjacent to the fitting. The supply and installation\
+               form a 400 V three-phase TN-C-S system.",
+    Question: "The following test results were recorded. Calculate the total IR between Live and Earth for all circuits\
+               Lights 1: Live-Live = 190 MΩ, Live-Earth = 176 MΩ\
+               Lights 2: Live-Live = 187 MΩ, Live-Earth = 20 MΩ\
+               Lights 3: Live-Live = 157 MΩ, Live-Earth = 162 MΩ\
+               Lights 4: Live-Live = 122 MΩ, Live-Earth = 134 MΩ\
+               Lights 5: Live-Live = 172 MΩ, Live-Earth = 178 MΩ",
+    options: [
+      {
+        id: "a",
+        text: "134 MΩ"
+      },
+      {
+        id: "b",
+        text: "13 MΩ"
+      },
+      {
+        id: "c",
+        text: "20 MΩ"
+      },
+      {
+        id: "d",
+        text: "178 MΩ"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: ""
+  },
+
+    {
+    id: 85,
+    scenario: "Insulation resistance has been tested on five new lighting circuits in an existing large distribution warehouse.\
+               These circuits are supplied from a new single-phase, five way DB. Switching for each circuit is by 230 V contactors.\
+               Connection to each light is made using a BS 1363 socket-outlet adjacent to the fitting. The supply and installation\
+               form a 400 V three-phase TN-C-S system.",
+    Question: "What is the test voltage applied during the insulation resistance test? ",
+    options: [
+      {
+        id: "a",
+        text: "250 VAC"
+      },
+      {
+        id: "b",
+        text: "500 VDC"
+      },
+      {
+        id: "c",
+        text: "500 VAC"
+      },
+      {
+        id: "d",
+        text: "250 VDC"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: ""
+  },
+
+  {
+    id: 86,
+    scenario: "Insulation resistance has been tested on five new lighting circuits in an existing large distribution warehouse.\
+               These circuits are supplied from a new single-phase, five way DB. Switching for each circuit is by 230 V contactors.\
+               Connection to each light is made using a BS 1363 socket-outlet adjacent to the fitting. The supply and installation\
+               form a 400 V three-phase TN-C-S system.",
+    Question: "What would be the most appropriate action to take if the result for lighting circuit 1 is 0.95 MΩ between live conductors?",
+    options: [
+      {
+        id: "a",
+        text: "Investigate lighting circuit 1 between Line-Neutral."
+      },
+      {
+        id: "b",
+        text: "Investigate lighting circuit 1 between Line-Earth."
+      },
+      {
+        id: "c",
+        text: "Record the result as a non-compliance."
+      },
+      {
+        id: "d",
+        text: ".  Record the result as acceptable"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: ""
+  },
+
+  {
+    id: 87,
+    scenario: "A section of galvanized trunking is to be inspected as part of periodic inspection and testing of a factory.\
+               The trunking contains unsheathed low voltage cables.",
+    Question: "What is the minimum IP rating for the bottom horizontal surface of the trunking?",
+    options: [
+      {
+        id: "a",
+        text: "IPXXB"
+      },
+      {
+        id: "b",
+        text: "IP2X"
+      },
+      {
+        id: "c",
+        text: "IPX4"
+      },
+      {
+        id: "d",
+        text: "IPXXD"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: ""
+  },
+
+  {
+    id: 88,
+    scenario: "A section of galvanized trunking is to be inspected as part of periodic inspection and testing of a factory.\
+               The trunking contains unsheathed low voltage cables.",
+    Question: "Which are the most appropriate human senses to check the security of the trunking lid?",
+    options: [
+      {
+        id: "a",
+        text: "Hearing and touch."
+      },
+      {
+        id: "b",
+        text: "Smell and hearing."
+      },
+      {
+        id: "c",
+        text: "Touch and sight."
+      },
+      {
+        id: "d",
+        text: "Sight and smell."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+  {
+    id: 89,
+    scenario: "A section of galvanized trunking is to be inspected as part of periodic inspection and testing of a factory.\
+               The trunking contains unsheathed low voltage cables.",
+    Question: "What is the most likely reason for carrying out this periodic inspection?",
+    options: [
+      {
+        id: "a",
+        text: "New trunking has been installed"
+      },
+      {
+        id: "b",
+        text: "New contractors have been appointed."
+      },
+      {
+        id: "c",
+        text: "New occupiers have purchased the building.  "
+      },
+      {
+        id: "d",
+        text: "New cables have been installed in the trunking."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+  {
+    id: 90,
+    scenario: "",
+    Question: "Which test would detect incorrect polarity of the Live conductors at each socket outlet?",
+    options: [
+      {
+        id: "a",
+        text: "Line-Neutral at each socket-outlet."
+      },
+      {
+        id: "b",
+        text: "Line-Earth at the distribution board."
+      },
+      {
+        id: "c",
+        text: "Line-Earth at each socket-outlet.  "
+      },
+      {
+        id: "d",
+        text: ".  Line-Neutral at the distribution board."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+  {
+    id: 91,
+    scenario: "",
+    Question: "What is the expected measured r1 value?",
+    options: [
+      {
+        id: "a",
+        text: "0.32 Ω"
+      },
+      {
+        id: "b",
+        text: "0.27 Ω"
+      },
+      {
+        id: "c",
+        text: "0.52 Ω"
+      },
+      {
+        id: "d",
+        text: "0.43 Ω"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+  {
+    id: 92,
+    scenario: "",
+    Question: "What is the expected measured r2 value?",
+    options: [
+      {
+        id: "a",
+        text: "0.85 Ω"
+      },
+      {
+        id: "b",
+        text: ".  0.70 Ω"
+      },
+      {
+        id: "c",
+        text: ".  0.45 Ω"
+      },
+      {
+        id: "d",
+        text: ".  0.27 Ω"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: ""
+  },
+
+  {
+    id: 93,
+    scenario: "",
+    Question: "What pattern of test results is expected at each socket-outlet when the line and cpc conductors are correctly cross-connected?",
+    options: [
+      {
+        id: "a",
+        text: "Readings rise to the center and then fall."
+      },
+      {
+        id: "b",
+        text: "Readings increase around the ring."
+      },
+      {
+        id: "c",
+        text: "Readings are substantially the same. "
+      },
+      {
+        id: "d",
+        text: "Readings decrease around the ring."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+    {
+    id: 94,
+    scenario: "",
+    Question: "What is the expected measured value at each socket-outlet when the line and neutral conductors are correctly cross-connected?",
+    options: [
+      {
+        id: "a",
+        text: "0.13 Ω"
+      },
+      {
+        id: "b",
+        text: "0.16 Ω "
+      },
+      {
+        id: "c",
+        text: "0.49 Ω"
+      },
+      {
+        id: "d",
+        text: "0.22 Ω"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: ""
+  },
+
+  {
+    id: 95,
+    scenario: "",
+    Question: "What is a simplified way to verify the r1 and r2 ratio for this circuit?",
+    options: [
+      {
+        id: "a",
+        text: "r2 = r1 x1.67 "
+      },
+      {
+        id: "b",
+        text: "r2 = r1 x2.67 "
+      },
+      {
+        id: "c",
+        text: "r1 = r2 x1.67 "
+      },
+      {
+        id: "d",
+        text: "r1 = r2 x2.67"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: ""
+  },
+
+  {
+    id: 96,
+    scenario: "",
+    Question: "What column numbers would be completed on the Schedule of Test Results, detailing the results obtained during the ring-final circuit continuity test?",
+    options: [
+      {
+        id: "a",
+        text: "8, 9, 11, 12, 17"
+      },
+      {
+        id: "b",
+        text: "8, 9, 10, 11, 12"
+      },
+      {
+        id: "c",
+        text: "18, 19, 20, 21, 26"
+      },
+      {
+        id: "d",
+        text: "10, 11, 12, 13, 18"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+  {
+    id: 97,
+    scenario: "",
+    Question: "What is the expected value of Zs for this circuit if the Ze = 0.29 ohms?",
+    options: [
+      {
+        id: "a",
+        text: "0.24 Ω "
+      },
+      {
+        id: "b",
+        text: "0.58 Ω"
+      },
+      {
+        id: "c",
+        text: "0.28 Ω"
+      },
+      {
+        id: "d",
+        text: "0.53 Ω"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: ""
+  },
+
+  {
+    id: 98,
+    scenario: "",
+    Question: "The measured R1+R2 value for a radial cooker circuit, with a 6 mm2 line conductor and a 2.5 mm2 cpc, is 0.29 Ω. What is the length of this circuit?",
+    options: [
+      {
+        id: "a",
+        text: "23m"
+      },
+      {
+        id: "b",
+        text: "28m"
+      },
+      {
+        id: "c",
+        text: "38m"
+      },
+      {
+        id: "d",
+        text: "33m"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: ""
+  },
+
+  {
+    id: 99,
+    scenario: "",
+    Question: "What value is to be recorded as the earth electrode resistance?\
+               Test1: 179 Ω, Test 2: 172 Ω, Test 3: 168 Ω",
+    options: [
+      {
+        id: "a",
+        text: "179 Ω"
+      },
+      {
+        id: "b",
+        text: "168 Ω"
+      },
+      {
+        id: "c",
+        text: "173 Ω"
+      },
+      {
+        id: "d",
+        text: "200 Ω"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  },
+
+    {
+  id: 100,
+    scenario: "",
+    Question: "What is the maximum rating of RCD that can be used for fault protection on this installation?",
+    options: [
+      {
+        id: "a",
+        text: "500 mA"
+      },
+      {
+        id: "b",
+        text: "300 mA"
+      },
+      {
+        id: "c",
+        text: "100 mA"
+      },
+      {
+        id: "d",
+        text: "30 mA"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: ""
+  }
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
 
 
 
