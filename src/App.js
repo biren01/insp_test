@@ -73,6 +73,13 @@ function App() {
     setMode('review');
   };
 
+  const goToLanding = () => {
+    setMode('landing');
+    setCurrentQuestion(0);
+    setAnswers({});
+    setScore(0);
+  };
+
   // Render based on mode
   switch (mode) {
     case 'result':
@@ -82,6 +89,7 @@ function App() {
           totalQuestions={questions.length} 
           onRetry={resetQuiz}
           onReview={goToReview}
+          onBackToLanding={goToLanding}
         />
       );
     

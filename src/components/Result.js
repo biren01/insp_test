@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Result = ({ score, totalQuestions, onRetry, onReview }) => {
+const Result = ({ score, totalQuestions, onRetry, onReview, onBackToLanding}) => {
   const percentage = Math.round((score / totalQuestions) * 100);
 
   const getMessage = () => {
@@ -29,6 +29,9 @@ const Result = ({ score, totalQuestions, onRetry, onReview }) => {
         </button>
         <button onClick={onReview} className="btn-secondary">
           Review Quiz
+        </button>
+        <button onClick={onBackToLanding} className="btn-secondary">
+          Start Over
         </button>
       </div>
     </div>
