@@ -5,7 +5,8 @@ import Select from 'react-select';
 const optionList = [
   { value: '0-40', label: 'Questions 1-40' },
   { value: '40-80', label: 'Questions 41-80' },
-  { value: '80-120', label: 'Questions 81-120' }
+  { value: '80-120', label: 'Questions 81-120' },
+  { value: '120-160', label: 'Questions 121-160' },
 ];
 
 const LandingPage = ({ activeOption, setActiveOption, onStarted }) => {

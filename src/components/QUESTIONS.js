@@ -2083,7 +2083,7 @@ export const QUESTIONS = [
         text: "The suitability of test results obtained"
       }
     ],
-    correctAnswer: "",
+    correctAnswer: "c",
     explanation: "GN3, Section 3.8.3 comments on setting sample sizes. You cannot use sampling on Initial Verification as this is 100% Inspection and Testing."
   },
 
@@ -2112,7 +2112,7 @@ export const QUESTIONS = [
         text: "EAWR"
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: "b",
     explanation: "Whilst values are obtained at ambient temperature, the results need to be compared with 'corrected' values, which GN3 contains.\
     Values in BS 7671 (Chapter 41) are for conductor temperatures of 20°C, whereas GN3 accounts for conductor operating temperature of 70°C."
   },
@@ -2135,14 +2135,14 @@ export const QUESTIONS = [
       },
       {
         id: "c",
-        text: "tExploratory work is done to determine circuit control"
+        text: "Exploratory work is done to determine circuit control"
       },
       {
         id: "d",
-        text: "d.small sample of circuits would be tested first"
+        text: "small sample of circuits would be tested first"
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: "c",
     explanation: "GN3 - various references in Section 3.8 advise on different approaches, but 3.8.3, Para 3 explains the procedure where no records exist"
   },
 
@@ -2206,7 +2206,7 @@ export const QUESTIONS = [
   },
 
   {
-    id: 1770588162784,
+    id: 110,
     scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
               replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
               and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
@@ -2232,7 +2232,413 @@ export const QUESTIONS = [
     ],
     correctAnswer: "a",
     explanation: "BS 7671, Appendix 6, Model Forms shows a Schedule of Test Results, but it doesn't contain a specific column for recording 'ADS'. There is a column for recording Max. Measured Zs, which relies on the earthing system, hence ADS (Automatic Disconnection of Supply)."
+  },
+
+   {
+    id: 111,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system.",
+    Question: "What information must be recorded, on a schedule of test results, regarding test instruments?",
+    options: [
+      {
+        id: "a",
+        text: "Battery condition"
+      },
+      {
+        id: "b",
+        text: "Serial or asset number"
+      },
+      {
+        id: "c",
+        text: "Last calibration date"
+      },
+      {
+        id: "d",
+        text: "Next calibration date"
+      }
+
+         ],
+    correctAnswer: "b",
+    explanation: "BS 7671, Appendix 6, Model Forms clearly shows on the Schedule of Test Results (top-right-hand corner) that the Serial or Asset number of the instrument is to be recorded."
+  },
+
+  {
+    id: 112,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system.",
+    Question: "What must the person responsible for the design of the new socket outlet circuits recommend on an EIC?",
+    options: [
+      {
+        id: "a",
+        text: "Address of the person who is responsible for construction"
+      },
+      {
+        id: "b",
+        text: "How many schedules of test results are required"
+      },
+      {
+        id: "c",
+        text: "c.\tInterval where further inspection and testing is carried out"
+      },
+      {
+        id: "d",
+        text: "Amendment date of BS 7671 used for the inspection"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "BS 7671, Reg. 644.4 states that the next inspection interval is to be recorded, but on the EIC itself under the heading 'Next Inspection', it specifies the Designer as completing that section."
+  },
+
+    {
+    id: 113,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system.",
+    Question: "What would the retention of certification allow when future periodic inspection and testing is due?",
+    options: [
+      {
+        id: "a",
+        text: "sampled inspection and testing"
+      },
+      {
+        id: "b",
+        text: "Remote inspection and testing"
+      },
+      {
+        id: "c",
+        text: "No inspection and testing"
+      },
+      {
+        id: "d",
+        text: "Testing without any inspection"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GN3, Sections 3.8.3 and 3.8.4 specify a need for previous records in order to set sample sizes."
+  },
+
+  {
+    id: 114,
+    scenario: "Refurbishment work has been undertaken in a small industrial unit. Two new socket-outlet radial circuits were installed and several luminaires\
+              replaced on an existing lighting circuit.  There are no previous records or charts for the electrical installation, so the client requires inspection\
+              and testing on the existing circuits.  The unit is currently vacant so the inspector has no restrictions on circuit or installation isolation.\
+              The supply and installation form a 230V single-phase TN-C-S system.",
+    Question: "What must an inspector carry out before inspecting terminations in the DB supplying the new and existing circuits?",
+    options: [
+      {
+        id: "a",
+        text: "Isolation of final circuits"
+      },
+      {
+        id: "b",
+        text: "Isolation of the new circuits"
+      },
+      {
+        id: "c",
+        text: "Isolation of the existing circuits"
+      },
+      {
+        id: "d",
+        text: "Isolation of the entire DB"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "Covers of enclosures should not be removed without first isolating. Where this question focusses on inspecting terminations inside the DB, then the entire DB needs to be isolated prior to the cover being removed"
+  },
+
+    {
+    id: 115,
+    scenario: "",
+    Question: "What is the responsibility of the duty holder in the inspection and testing procedure?",
+    options: [
+      {
+        id: "a",
+        text: "Manage work efficiently"
+      },
+      {
+        id: "b",
+        text: "Manage the sequence of tests"
+      },
+      {
+        id: "c",
+        text: "Manage regular calibration dates"
+      },
+      {
+        id: "d",
+        text: "Manage associated risks"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "GN3, Section 1.1, para 2 states that it is 'the inspector's duty to ensure their own safety and that of others...' Whilst the inspector is responsible for all or part of an installation during the inspection and testing process, they are effectively the Duty Holder for the part under their control."
+  },
+
+  {
+    id: 116,
+    scenario: "",
+    Question: "How regularly must an approved voltage indicator, used to check safe isolation, be checked for operation?",
+    options: [
+      {
+        id: "a",
+        text: "Every week"
+      },
+      {
+        id: "b",
+        text: "Every twelve months"
+      },
+      {
+        id: "c",
+        text: "Every three months"
+      },
+      {
+        id: "d",
+        text: "Every time it is used"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "The answer to this relies on your own knowledge and experience of safe isolation. You should check the voltage indicator every time it is used, both before and after testing for dead"
+  },
+
+  {
+    id: 117,
+    scenario: "",
+    Question: "What should be undertaken if a Main Protective Bonding conductor cannot be seen throughout its length?",
+    options: [
+      {
+        id: "a",
+        text: "It should be tested for continuity"
+      },
+      {
+        id: "b",
+        text: "It should be exposed to see it throughout"
+      },
+      {
+        id: "c",
+        text: "It should be pulled to check for breaks"
+      },
+      {
+        id: "d",
+        text: "It should be replaced for another  "
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GN3, Section 2.6.5, Continuity testing, Test Method 2 - bonding and earthing conductors. Two paragraphs explain the procedure where it is not possible to see the conductor throughout its entire length."
+  },
+
+  {
+    id: 118,
+    scenario: "",
+    Question: "What would be checked by visual inspection to verify that Additional Protection is suitably provided by RCD?",
+    options: [
+      {
+        id: "a",
+        text: "That the bn does not exceed 150mA"
+      },
+      {
+        id: "b",
+        text: "That the bn does not exceed 30mA"
+      },
+      {
+        id: "c",
+        text: "That the bn does not exceed 300mA"
+      },
+      {
+        id: "d",
+        text: "That the bn does not exceed 100mA"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "BS 7671, Reg. 415.1.1 states: '...not exceeding 30mA'"
+  },
+
+   {
+    id: 119,
+    scenario: "",
+    Question: "When is it acceptable to insert a cross against any item in Section 2 of a schedule of inspections for new works?",
+    options: [
+      {
+        id: "a",
+        text: "When the Earthing Conductor is undersized"
+      },
+      {
+        id: "b",
+        text: "Should an item listed be not applicable"
+      },
+      {
+        id: "c",
+        text: "Under no circumstances, as all must comply"
+      },
+      {
+        id: "d",
+        text: "Where an installation earth electrode is corroded"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "BS 7671, Appendix 6, Model Forms. Note 2 on the EIC Schedule of Inspections clearly states that the only entries permitted are a tick or N/A. New installations must be 100% correct prior to bringing into service."
+  },
+
+  {
+    id: 120,
+    scenario: "",
+    Question: "How would an obvious non-compliance be recorded on an inspection schedule during periodic inspection?",
+    options: [
+      {
+        id: "a",
+        text: "FI"
+      },
+      {
+        id: "b",
+        text: "C1,C2 or C3"
+      },
+      {
+        id: "c",
+        text: "\"X\""
+      },
+      {
+        id: "d",
+        text: "Lim"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "GN3, Section 3, Table 3.5 shows the coding to be used for non-compliances. C2 and C3 are used for obvious ones."
+  },
+
+   {
+    id: 121,
+    scenario: "",
+    Question: "What would be verified using the sense of touch during an initial verification?",
+    options: [
+      {
+        id: "a",
+        text: "Suitable size of conductor"
+      },
+      {
+        id: "b",
+        text: "Identification of conductors"
+      },
+      {
+        id: "c",
+        text: "Termination of conductors"
+      },
+      {
+        id: "d",
+        text: "Suitable type of conductors"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "Termination of conductors is normally verified with a combination of 'tug' testing and use of a tool, such as a screwdriver, so it's definitely 'touch'. All other answers are visual."
+  },
+
+  {
+    id: 122,
+    scenario: "",
+    Question: "What would be the MOST common reason for a crackling/arcing sound coming from an existing light switch?",
+    options: [
+      {
+        id: "a",
+        text: "Loose line termination"
+      },
+      {
+        id: "b",
+        text: "Overloaded circuit breaker"
+      },
+      {
+        id: "c",
+        text: "Oversized switch rating"
+      },
+      {
+        id: "d",
+        text: "Loose earth connection"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "Knowledge and experience would tell you that a loose line termination would crackle or arc, mainly due to the fact that it is carrying current to the load."
+  },
+
+    {
+  id: 123,
+    scenario: "",
+    Question: "What classification code would be used when discovering a severely damaged socket-outlet during periodic inspection?",
+    options: [
+      {
+        id: "a",
+        text: "C3"
+      },
+      {
+        id: "b",
+        text: "C1"
+      },
+      {
+        id: "c",
+        text: "C2"
+      },
+      {
+        id: "d",
+        text: "FI"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GN3, Section 3, Table 3.5 gives examples. in this instance, assuming live parts would be exposed, it is an obvious C1"
+  },
+
+   {
+    id: 124,
+    scenario: "",
+    Question: "What code would be given where access to a room is a limitation and the inspector suspects corrosion to a bonding conductor?",
+    options: [
+      {
+        id: "a",
+        text: "C2"
+      },
+      {
+        id: "b",
+        text: "C3"
+      },
+      {
+        id: "c",
+        text: "FI"
+      },
+      {
+        id: "d",
+        text: "C1"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "GN3, Section 3, Table 3.5 gives examples. in this instance there is uncertainty, so F1 is used if it suspected the issue would yield either a Cl or C2 once it could be investigated properly."
+  },
+
+  {
+    id: 125,
+    scenario: "",
+    Question: "What equipment IP rating is suitable for splashes of water from all directions?",
+    options: [
+      {
+        id: "a",
+        text: "IP X2"
+      },
+      {
+        id: "b",
+        text: "IP X1"
+      },
+      {
+        id: "c",
+        text: "IP X3"
+      },
+      {
+        id: "d",
+        text: "IP X4"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "BS 7671, Appendix 5, External Influences. The table detailing AD codes (Water) also contain equivalent IP codes with descriptions."
   }
+
+
+
 
 
 
