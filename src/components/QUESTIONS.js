@@ -2635,7 +2635,432 @@ export const QUESTIONS = [
     ],
     correctAnswer: "d",
     explanation: "BS 7671, Appendix 5, External Influences. The table detailing AD codes (Water) also contain equivalent IP codes with descriptions."
+  },
+
+  {
+    id: 126,
+    scenario: "",
+    Question: "Where a barrier or enclosure has a rating of IP2X, what diameter of tool should NOT be able to penetrate that barrier/enclosure?",
+    options: [
+      {
+        id: "a",
+        text: ">12.50mm"
+      },
+      {
+        id: "b",
+        text: ">1.00mm"
+      },
+      {
+        id: "c",
+        text: ">0.05mm"
+      },
+      {
+        id: "d",
+        text: ">2.50mm"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "OSG, Appendix L has examples with dimensions, which states that IP2X relates to penetration by a solid foreign object >12.50mm in diameter shall not be possible."
+  },
+
+    {
+    id: 127,
+    scenario: "",
+    Question: "What is the MINIMUM permitted IP protection for the top surface of an accessible DB?",
+    options: [
+      {
+        id: "a",
+        text: "IP4X"
+      },
+      {
+        id: "b",
+        text: "IP1X"
+      },
+      {
+        id: "c",
+        text: "IP3X"
+      },
+      {
+        id: "d",
+        text: "IP2X"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "BS 7671, Reg. 416.2.2 states IP4X (or IPXXD)."
+  },
+
+   {
+    id: 128,
+    scenario: "",
+    Question: "Which test does NOT require GS38 compliant leads?",
+    options: [
+      {
+        id: "a",
+        text: "Continuity of protective conductors"
+      },
+      {
+        id: "b",
+        text: "Insulation resistance"
+      },
+      {
+        id: "c",
+        text: "Phase rotation"
+      },
+      {
+        id: "d",
+        text: "Prospective fault current"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GS38 relates to live testing. As continuity tests are 'dead' tests, GS38 does not apply."
+  },
+
+  {
+    id: 129,
+    scenario: "",
+    Question: "What must be fitted to GS38 compliant test leads?",
+    options: [
+      {
+        id: "a",
+        text: "Thermal fuses"
+      },
+      {
+        id: "b",
+        text: "Finger guards"
+      },
+      {
+        id: "c",
+        text: "Neon indicators"
+      },
+      {
+        id: "d",
+        text: "6mm exposed tip"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GS38, Item 9 lists some requirements for probes and leads. Whilst finger guards and tip exposure are concerned specifically with 'probes', the leads need to be protected in the same way as any cable that carries electricity which, in this instance, is by fuses that should not exceed 500mA."
+  },
+
+   {
+    id: 130,
+    scenario: "",
+    Question: "What percentage does GN3 suggest as a basic digital instrument measurement accuracy?",
+    options: [
+      {
+        id: "a",
+        text: "5%"
+      },
+      {
+        id: "b",
+        text: "4%"
+      },
+      {
+        id: "c",
+        text: "7%"
+      },
+      {
+        id: "d",
+        text: "6%"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GN3, Section 4.2, para 2 states 5% is usually adequate."
+  },
+
+  {
+    id: 131,
+    scenario: "",
+    Question: "What is a suitable method of testing the function of an insulation resistance tester?",
+    options: [
+      {
+        id: "a",
+        text: "Checking the last calibration date"
+      },
+      {
+        id: "b",
+        text: "TEst with proves open, and then touching"
+      },
+      {
+        id: "c",
+        text: "Tetsting a known ength of cable"
+      },
+      {
+        id: "d",
+        text: "On a known 230V supply"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "Knowledge and experience should tell you that verifying an instrument's capability of measuring insulation resistance is to carry out a probes apart/probes touching test. This will indicate whether or not it shows either a 0.00Mohm reading (probes touching) or a very high reading, i.e. >999 (probes apart), thus confirming its capability to detect damaged or deteriorated cable insulation."
+  },
+
+ {
+    id: 132,
+    scenario: "",
+    Question: "Why does continuity testing precede insulation resistance testing during initial verification?",
+    options: [
+      {
+        id: "a",
+        text: "To ensure the cpc is present to protect persons during high voltage testing"
+      },
+      {
+        id: "b",
+        text: "To ensure all protective devices will trip should a short circuit be revealed"
+      },
+      {
+        id: "c",
+        text: "To ensure conductors are sufficiently insulated before using high voltages"
+      },
+      {
+        id: "d",
+        text: "To ensure conductors are continuous before testing between them"
+      }
+    ],
+    correctAnswer: "",
+    explanation: "GN3, Section 2.6.4, and also BS 7671, Reg. 643.1 state the sequence of tests and that the 'dead' tests must be carried out in that order. The reason for confirming continuity before insulation resistance is to ensure there are no breaks in the conductors being tested, which ensures the IR test voltage will reach the very end of the conductor."
+  },
+
+  {
+    id: 133,
+    scenario: "",
+    Question: "Why is a set test sequence NOT required when testing existing installations having reliable, previous test records?",
+    options: [
+      {
+        id: "a",
+        text: "Previous test data shows that no faults are present"
+      },
+      {
+        id: "b",
+        text: "Tests should be arranged to minimise disturbance"
+      },
+      {
+        id: "c",
+        text: "Dead tests are only required to confirm compliance"
+      },
+      {
+        id: "d",
+        text: "Circuits are working so no faults are possible"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "GN3, Section 3.8.2, para 2 recommends consultation with the client and, amongst other things, mentions disruption."
+  },
+
+    {
+    id: 134,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "What is the expected reading between line and neutral at each socket-outlet?",
+    options: [
+      {
+        id: "a",
+        text: "3.7Ω"
+      },
+      {
+        id: "b",
+        text: "0.18Ω"
+      },
+      {
+        id: "c",
+        text: "1.80Ω"
+      },
+      {
+        id: "d",
+        text: "0.09Ω"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "First calculate resistance of L (r1) & N (rn). These are both 2.5mm2 and 25m long (end-to-end). From GN3, Appendix B, a 2.5mm2 conductor is 7.41mQ/m and to determine the overall resistance for the known length, we use the formula in Appendix B:  R = (mΩ/m x L) / 1000 So, resistance of r1= (7.41 x 25) / 1000 = 0.185Ω  Since rn is the same csa and length, this too will be 0.185Ω The formula for determining the measured value between L & N at each socket-outlet can be found in GN3, Section 2.6.6, Step2: (r1+rn)/4 So, the expected reading would be: (0.185 + 0.185) / 4 = 0.0925Ω  The correct answer is 0.09Ω (rounded to 2 decimal places)"
+  },
+
+  {
+    id: 135,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "During the ring final circuit test, and following successful end-to-end loop testing, the result at one socket outlet was:\
+               Line — Neutral: open circuit Line to cpc — 0.12Ω:\
+               What is the MOST likely reason for the open circuit, L — N, reading?",
+    options: [
+      {
+        id: "a",
+        text: "Cross polarity Line and cpc"
+      },
+      {
+        id: "b",
+        text: "Cross polarity Line and Neutral"
+      },
+      {
+        id: "c",
+        text: "Open circuit line conductor"
+      },
+      {
+        id: "d",
+        text: "Short circuit Line to Neutral"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GN3, Section 2.6.6 describes the 3-step method for verifying ring circuits. Step 2 is between L & N, and Step 3 is between L & cpc. When testing between each of the points, so long as the relevant conductors are present in the expected socket pins (any way round), then a value will be shown on the test meter. Where one of the conductors is not where it should be, then the test meter will yield a very high reading, indicating an open circuit. The question stated open circuit L to N, but a value for L to cpc. This indicates that either L or N is not where it should be, but during the Step 3 test (L to cpc) a reading would indicate that you are in fact measuring between L and cpc, but because L is in the wrong position, as indicated by step 2 open circuit, then it can be concluded that L and cpc have been eversed, i.e. the Line has been terminated into the cpc's terminal and vice-versa."
+  },
+
+  {
+    id: 136,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "What value is recorded as R1 + R2 when carrying out a ring final circuit test?",
+    options: [
+      {
+        id: "a",
+        text: "The lowest Line-Neutral result"
+      },
+      {
+        id: "b",
+        text: "The highest Line-Neutral result"
+      },
+      {
+        id: "c",
+        text: "The Lowest Line-cpc result"
+      },
+      {
+        id: "d",
+        text: "The highest Line-cpc result"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "GN3, Section 2.6.6, Step 3 states that the highest value recorded represents  the maximum (R1+R2) of the circuit. Remember that Step 3 is measuring  between Line (R1) and cpc (R2)."
+  },
+
+  {
+    id: 137,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "The ring final circuit is protected by a Type B, 32A circuit breaker to BS EN 60898. What is the MAXIMUM permitted TEST value of earth fault loop impedance?",
+    options: [
+      {
+        id: "a",
+        text: "1.87Ω"
+      },
+      {
+        id: "b",
+        text: "1.35Ω"
+      },
+      {
+        id: "c",
+        text: "1.10Ω"
+      },
+      {
+        id: "d",
+        text: "2.10Ω"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "The MAXIMUM permitted value is also known as the 'corrected' value and accounts for conductor operating temperature of 70°C. GN3, Appendix A, or OSG, Appendix B contain the tables with 'corrected' values. For a B32 circuit breaker, GN3, Appendix A, Table A4, or OSG, Appendix B, Table B6 will be the reference.  Alternatively, BS 7671, Chapter 41, Table 41.3 contains the 'tabulated' value (at 20°C). To obtain the 'corrected' value, simply multiply the value in the table by 0.8 (This figure may be referenced in BS 7671, Appendix 3 in relation to maximum earth fault loop impedance) Correct answer is 1.10Ω which is already given in GN3 and OSG - from BS 7671 Table 41.3, it would be 1.37 x 0.8 = 1.10Ω)"
+  },
+
+  {
+    id: 138,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "Several existing lighting circuits require an insulation resistance test. How is the test applied to minimise disconnection of luminaires?",
+    options: [
+      {
+        id: "a",
+        text: "Test Line to Neutral only"
+      },
+      {
+        id: "b",
+        text: "Test Neutral to Earth only"
+      },
+      {
+        id: "c",
+        text: "Test Live to Earth only"
+      },
+      {
+        id: "d",
+        text: "Test Line to Earth only"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "Terminology is key here. Line is the brown conductor, Neutral is the blue conductor and Earth is the green/yellow conductor. LIVE is BOTH Line & Neutral as these are considered as normally current-carrying. GN3, Section 2.6.7 describes testing of a whole consumer unit and states that where there is equipment that is vulnerable to the test voltage, the Line and Neutral conductors can be linked together. A test would then be made between the linked conductors and Earth, so Live to Earth only. On the Schedule of Test Results, it clearly indicates 'Live to Live' (meaning: L to N) and 'Live to Earth' (meaning: L+N to E). Linking L and N prevents the test voltage from entering sensitive electronics, etc., since there is no return path."
+  },
+
+  {
+    id: 139 ,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "How is an insulation resistance test carried out on the new lighting circuit?",
+    options: [
+      {
+        id: "a",
+        text: "Line to Neutral, then Neutral to Earth"
+      },
+      {
+        id: "b",
+        text: "Live to earth only"
+      },
+      {
+        id: "c",
+        text: "Line to Earth only"
+      },
+      {
+        id: "d",
+        text: "Line ot Neutral, then Live to Earth"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "Terminology is key here. Line is the brown conductor, Neutral is the blue conductor and Earth is the green/yellow conductor. LIVE is BOTH Line & Neutral as these are considered as normally current-carrying. GN3, Section 2.6.7 describes insulation resistance testing, but for NEW circuits you have to consider that a wo% test will be required. Therefore you must test Line to Neutral, and the Line and Neutral to Earth. On the Schedule of Test Results, it clearly indicates 'Live to Live' (meaning: L to N) and 'Live to Earth' (meaning: L+N to E). The lighting equipment would have to be disconnected (if it contains electronics, i.e. LED sealed units), or at least have the lamps removed if this is possible."
+  },
+
+  {
+    id: 140,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "What action should be taken regarding Main Protective Bonding whilst carrying out Insulation Resistance testing?",
+    options: [
+      {
+        id: "a",
+        text: "It must be disconnected at the clamp."
+      },
+      {
+        id: "b",
+        text: "It should be linked to the line conductor"
+      },
+      {
+        id: "c",
+        text: "It must be connected at all normal points"
+      },
+      {
+        id: "d",
+        text: "It should be disconnected from the MET"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "GN3, Section 2.6.7, para 2, and BS7671, Reg. 643.3.1 both state that protective conductors must be connected as normal."
   }
+
+
+
+
+
 
 
 
