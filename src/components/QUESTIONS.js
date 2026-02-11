@@ -2815,7 +2815,7 @@ export const QUESTIONS = [
         text: "To ensure conductors are continuous before testing between them"
       }
     ],
-    correctAnswer: "",
+    correctAnswer: "d",
     explanation: "GN3, Section 2.6.4, and also BS 7671, Reg. 643.1 state the sequence of tests and that the 'dead' tests must be carried out in that order. The reason for confirming continuity before insulation resistance is to ensure there are no breaks in the conductors being tested, which ensures the IR test voltage will reach the very end of the conductor."
   },
 
@@ -3055,7 +3055,590 @@ export const QUESTIONS = [
     ],
     correctAnswer: "c",
     explanation: "GN3, Section 2.6.7, para 2, and BS7671, Reg. 643.3.1 both state that protective conductors must be connected as normal."
+  },
+
+  {
+    id: 141,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "What is the minimum permitted value of insulation resistance for the ring final circuit?",
+    options: [
+      {
+        id: "a",
+        text: "0.25MΩ"
+      },
+      {
+        id: "b",
+        text: "1.00MΩ"
+      },
+      {
+        id: "c",
+        text: "5.00MΩ"
+      },
+      {
+        id: "d",
+        text: "0.50MΩ"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "BS 7671, Chapter 64, Table 64 - this gives the minimum acceptable values, regardless of the circuit. For a 230V AC system, the test voltage applied would be 500V DC with a minimum value of 1.00MΩ being acceptable."
+  },
+
+   {
+    id: 142,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "What is the MINIMUM permissible cross-sectional area of Main Protective Bonding Conductor to the gas installation pipe for this installation?",
+    options: [
+      {
+        id: "a",
+        text: "6.0mm2"
+      },
+      {
+        id: "b",
+        text: "2.5mm2"
+      },
+      {
+        id: "c",
+        text: "10.0mm2"
+      },
+      {
+        id: "d",
+        text: "4.0mm2"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "Best reference for this is OSG, Section 4.4. Table 4.4 (ii) state sizes for protective bonding conductors in a TN-C-S system. From the answer options given, it can be assumed that the supply Line conductor is no bigger than 35mm2 ,therefore the bonding conductor would be 10mm2 minimum."
+  },
+
+  {
+    id: 143,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "What must be carried out before testing between Line and Earth when establishing the external earth fault loop impedance?",
+    options: [
+      {
+        id: "a",
+        text: "The installation is isolated and the Earthing Conductor disconnected"
+      },
+      {
+        id: "b",
+        text: "The installation is isolated and the Earthing Conductor connected"
+      },
+      {
+        id: "c",
+        text: "The installation is energised and the Earthing Conductor "
+      },
+      {
+        id: "d",
+        text: "The installation is energised and the Earthing Conductor connected"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GN3, Section 2.6.15 describes earth fault loop impedance verification. When it comes to external EFLI (Ze), it states that the main switch should be open (i.e. isolated) and the means of earthing disconnected."
+  },
+
+  {
+    id: 144,
+    scenario: "Refurbishment work has been undertaken in a retail unit. One new ring final socket-outlet circuit and one new lighting circuit has been installed.\
+              There are no previous records or charts for the electrical installation, so the client requires inspection and testing to the existing circuits.\
+              The unit is currently occupied by the client so some work is being undertaken out of normal operating hours. The supply and installation forms a 400/230V,\
+              3-phase TN-C-S system. All testing is to be undertaken at an ambient temperature of 20°C. The new ring final circuit is wired using 2.5mm2/1.5mm2 cable\
+              with a circuit loop length of 25m",
+    Question: "What must be carried out before undertaking a test of PFC (Ipf) at the origin of the installation?",
+    options: [
+      {
+        id: "a",
+        text: "The installation is run at full load and the Earthing Conductor  disconnected."
+      },
+      {
+        id: "b",
+        text: "The installation is isolated and the Earthing Conductor disconnected"
+      },
+      {
+        id: "c",
+        text: "The installation is run at full load and the Earthing Conductor connected"
+      },
+      {
+        id: "d",
+        text: "The installation is isolated and the Earthing Conductor connected"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "GN3, Section 2.6.16 describes prospective fault current testing. When measuring at the origin, the isolation would remain in place and access to the incoming live terminals used. The earthing conductor MUST be connected as this would be the state of the system under actual fault conditions."
+  },
+
+   {
+    id: 145,
+    scenario: "Inspection and testing is to be carried out to a domestic dwelling forming part of a 230V single-phase TT system.\
+               One lighting circuit has had one new lighting point added and the remaining existing installation is to undergo a periodic\
+               inspection and test. The Earthing Conductor connecting the installation earth electrode to the MET has both corrosion and mechanical\
+                protection. The installation is protected by a 300mA RCD for fault protection and all circuits are protected by individual 30mA RCBOs\
+                providing Additional Protection. A test is carried out to determine the effectiveness of the Earth Electrode using an Earth Fault Loop\
+                Impedance Tester.",
+    Question: "What is the maximum permitted value for this test?",
+    options: [
+      {
+        id: "a",
+        text: "167 Ω"
+      },
+      {
+        id: "b",
+        text: "200Ω"
+      },
+      {
+        id: "c",
+        text: "100Ω"
+      },
+      {
+        id: "d",
+        text: "1667Ω"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "BS 7671, Chapter 41, Table 41.5 gives a value of 1670 where a 300mA RCD is being used for fault protection.  Alternatively, this may be calculated using Ohm's Law as follows (based on Reg. 411.5.3): R = V/I = 50/Ian = 50 / 0.3 = 167Ω  Where: V is maximum permissible 'touch voltage' I is the residual operating current of the RCD in amperes e.g. 300mA is 300/1000 = 0.3A"
+  },
+
+  {
+    id: 146,
+    scenario: "Inspection and testing is to be carried out to a domestic dwelling forming part of a 230V single-phase TT system.\
+               One lighting circuit has had one new lighting point added and the remaining existing installation is to undergo a periodic\
+               inspection and test. The Earthing Conductor connecting the installation earth electrode to the MET has both corrosion and mechanical\
+                protection. The installation is protected by a 300mA RCD for fault protection and all circuits are protected by individual 30mA RCBOs\
+                providing Additional Protection. A test is carried out to determine the effectiveness of the Earth Electrode using an Earth Fault Loop\
+                Impedance Tester.",
+    Question: "A test is carried out to determine the effectiveness of the Earth Electrode using an Earth Fault Loop Impedance Tester. What must be carried out before testing?",
+    options: [
+      {
+        id: "a",
+        text: "The installation is energised and the Earthing Conductor disconnected"
+      },
+      {
+        id: "b",
+        text: "The installation is energised and the Earthing Conductor connected"
+      },
+      {
+        id: "c",
+        text: "The installation is isolated and the Earthing Conductor disconnected"
+      },
+      {
+        id: "d",
+        text: "The installation is isolated and the Earthing Conductor connected"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "GN3, Section 2.6.14 covers earth electrode resistance testing. Test Method E3 near the end of this section describes performing this test using an earth fault loop impedance tester. Essentially it is similar to measuring Ze on a TN system where the isolation has to be in place and the earth conductor disconnected."
+  },
+
+  {
+    id: 147,
+    scenario: "Inspection and testing is to be carried out to a domestic dwelling forming part of a 230V single-phase TT system.\
+               One lighting circuit has had one new lighting point added and the remaining existing installation is to undergo a periodic\
+               inspection and test. The Earthing Conductor connecting the installation earth electrode to the MET has both corrosion and mechanical\
+                protection. The installation is protected by a 300mA RCD for fault protection and all circuits are protected by individual 30mA RCBOs\
+                providing Additional Protection. A test is carried out to determine the effectiveness of the Earth Electrode using an Earth Fault Loop\
+                Impedance Tester.",
+    Question: "What is the MINIMUM permitted cross-sectional area of Earthing Conductor for this installation, given the installation conditions?",
+    options: [
+      {
+        id: "a",
+        text: "2.5mm2"
+      },
+      {
+        id: "b",
+        text: "6.0mm2"
+      },
+      {
+        id: "c",
+        text: "16.0mm2"
+      },
+      {
+        id: "d",
+        text: "10.0mm2"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "OSG, Section 44, Table 4.4(iii) contains the specifications for TT systems. Whilst this scenario has stated that the earthing conductor has both mechanical protection and protection against corrosion, (whether or not it is buried), then a 2.5mm2 conductor size will be sufficient. Remember that whilst a 300mA RCD has been provided for fault protection, very little current will flow down to the earth electrode under earth fault conditions before the RCD's L&N imbalance and it disconnects the supply."
+  },
+
+  {
+    id: 148,
+    scenario: "Inspection and testing is to be carried out to a domestic dwelling forming part of a 230V single-phase TT system.\
+               One lighting circuit has had one new lighting point added and the remaining existing installation is to undergo a periodic\
+               inspection and test. The Earthing Conductor connecting the installation earth electrode to the MET has both corrosion and mechanical\
+                protection. The installation is protected by a 300mA RCD for fault protection and all circuits are protected by individual 30mA RCBOs\
+                providing Additional Protection. A test is carried out to determine the effectiveness of the Earth Electrode using an Earth Fault Loop\
+                Impedance Tester.",
+    Question: "The RCBOs are to be tested using an RCD test instrument What results should be obtained for each test current x I∆n?",
+    options: [
+      {
+        id: "a",
+        text: "0.5x = trip in <300ms; 1x = trip in <200ms; 5x = >40ms"
+      },
+      {
+        id: "b",
+        text: "0.5x = trip in <500ms; 1x = trip in >300ms; 5x = no trip"
+      },
+      {
+        id: "c",
+        text: "0.5x = no trip; 1x = trip in <200mS; 5x = >100ms"
+      },
+      {
+        id: "d",
+        text: "0.5x = no trip; 1x = trip in <300ms; 5x = trip in <40ms"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "GN3, Section 2.6.19 describes testing of RCDs (which includes RCBOs). Since the RCBOs are being provided as 'Additional Protection' and have a residual operating current not exceeding 3omA, they must be subjected to the full suite of tests.  OSG, Sections 11.3 and 11.5 give a better explanation of the required tests (for the RCBOs), which have to be performed on both positive and negativehalf-cycles of the sine wave (0° and 180° respectively)  0.5 x I∆n - No Trip Ix I∆n - Trip <300ms 5x I∆n - Trip <40ms"
+  },
+
+  {
+    id: 149,
+    scenario: "Inspection and testing is to be carried out to a domestic dwelling forming part of a 230V single-phase TT system.\
+               One lighting circuit has had one new lighting point added and the remaining existing installation is to undergo a periodic\
+               inspection and test. The Earthing Conductor connecting the installation earth electrode to the MET has both corrosion and mechanical\
+                protection. The installation is protected by a 300mA RCD for fault protection and all circuits are protected by individual 30mA RCBOs\
+                providing Additional Protection. A test is carried out to determine the effectiveness of the Earth Electrode using an Earth Fault Loop\
+                Impedance Tester.",
+    Question: "When should the integral test button on the RCBOs be operated whilst undertaking periodic tests?",
+    options: [
+      {
+        id: "a",
+        text: "Before all instrument tests"
+      },
+      {
+        id: "b",
+        text: "After all instrument tests"
+      },
+      {
+        id: "c",
+        text: "After the 0.5 x I∆n but before the 1 x I∆n test"
+      },
+      {
+        id: "d",
+        text: "Not required for periodic tests"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "GN3, Section 2.6.19 describes testing of RCDs (which includes RCBOs) and operation of the integral test button is explained AFTER the description of the instrument tests. It is effectively a 'functional test', which is performed after all other testing has taken place."
+  },
+
+  {
+    id: 150,
+    scenario: "Inspection and testing is to be carried out to a domestic dwelling forming part of a 230V single-phase TT system.\
+               One lighting circuit has had one new lighting point added and the remaining existing installation is to undergo a periodic\
+               inspection and test. The Earthing Conductor connecting the installation earth electrode to the MET has both corrosion and mechanical\
+                protection. The installation is protected by a 300mA RCD for fault protection and all circuits are protected by individual 30mA RCBOs\
+                providing Additional Protection. A test is carried out to determine the effectiveness of the Earth Electrode using an Earth Fault Loop\
+                Impedance Tester.",
+    Question: "How would Ipf be determined for this installation?",
+    options: [
+      {
+        id: "a",
+        text: "By measuring value between Line and Earth only and recording the value obtained as Ipf"
+      },
+      {
+        id: "b",
+        text: "By measuring value between Line and Neutral, and then Line and Earth, recording the lowest value obtained as Ipf"
+      },
+      {
+        id: "c",
+        text: "By measuring value between Line and Neutral, and then Neutral and Earth, recording the highest value obtained as Ipf"
+      },
+      {
+        id: "d",
+        text: "By measuring value between Line and Neutral only and then calculating the Line to Earth value, recording the highest value obtained as Ipf"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "GN3, Section 2.6.16 explains the procedures for measuring Ipf, but  consideration to this scenario's earthing system must be given.  For a TT system with an earth electrode in place to carry earth fault current away safely, and a 300mA RCD being provided as fault protection, (which will limit current flow), the relatively high resistance will have a significant impact on how much current will flow to earth. With this in mind, the highest current that will be generated and likely to pass through the protective devices will inevitably be from a short circuit (L - N) as this would have the least resistance, hence this would be the value that would be recorded as Ipf in a TT system.  Remember that Ipf will be determined after earth fault loops have been determined (or at the same time with some instruments)."
+  },
+
+  {
+    id: 151,
+    scenario: "Inspection and testing is to be carried out to a domestic dwelling forming part of a 230V single-phase TT system.\
+               One lighting circuit has had one new lighting point added and the remaining existing installation is to undergo a periodic\
+               inspection and test. The Earthing Conductor connecting the installation earth electrode to the MET has both corrosion and mechanical\
+                protection. The installation is protected by a 300mA RCD for fault protection and all circuits are protected by individual 30mA RCBOs\
+                providing Additional Protection. A test is carried out to determine the effectiveness of the Earth Electrode using an Earth Fault Loop\
+                Impedance Tester.",
+    Question: "What test is not applicable to this installation?",
+    options: [
+      {
+        id: "a",
+        text: "Continuity of cpc"
+      },
+      {
+        id: "b",
+        text: "Functional testing"
+      },
+      {
+        id: "c",
+        text: "Phase sequencing"
+      },
+      {
+        id: "d",
+        text: "Insulation resistance"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "Phase sequencing is only required for poly-phase systems, i.e. three-phase,  whereas the system in this scenario is single-phase. All the other tests  listed are relevant."
+  },
+
+   {
+    id: 152,
+    scenario: "A distribution circuit R1 + R2 was measured and recorded as 0.42Ω.  Ze at the origin of the circuit was measured and recorded as 0.04Ω.\
+               The circuit is protected by a 63A BS88-2 system E fuse.",
+    Question: "What value of Zs is recorded for this circuit?",
+    options: [
+      {
+        id: "a",
+        text: "0.57Ω"
+      },
+      {
+        id: "b",
+        text: "0.37Ω"
+      },
+      {
+        id: "c",
+        text: "0.46Ω"
+      },
+      {
+        id: "d",
+        text: "0.38Ω"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "GN3, Appendix B gives the formula: Zs = Ze + R1 + R2 therefore:  0.04 + 0.42 = 0.46Ω"
+  },
+
+  {
+    id: 153,
+    scenario: "A distribution circuit R1 + R2 was measured and recorded as 0.42Ω.  Ze at the origin of the circuit was measured and recorded as 0.04Ω.\
+               The circuit is protected by a 63A BS88-2 system E fuse.",
+    Question: "What factor is applied to the MAXIMUM tabulated value of Zs given in BS7671?",
+    options: [
+      {
+        id: "a",
+        text: "1.04"
+      },
+      {
+        id: "b",
+        text: "1.20"
+      },
+      {
+        id: "c",
+        text: "0.80"
+      },
+      {
+        id: "d",
+        text: "0.75"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "BS 7671, Appendix 3 contains the formulae for Zs, firstly at 20°C, and then to correct for conductor operating temperature of 70°C, which applies a factor of 0.8 in order to account for the increased resistance of copper due to the heating effects."
+  },
+
+  {
+    id: 154,
+    scenario: "A distribution circuit R1 + R2 was measured and recorded as 0.42Ω.  Ze at the origin of the circuit was measured and recorded as 0.04Ω.\
+               The circuit is protected by a 63A BS88-2 system E fuse.",
+    Question: "What is the MAXIMUM value of earth fault loop impedance, given in BS 7671 for this circuit, under operational conditions?",
+    options: [
+      {
+        id: "a",
+        text: "0.62Ω"
+      },
+      {
+        id: "b",
+        text: "0.68Ω"
+      },
+      {
+        id: "c",
+        text: "0.78Ω"
+      },
+      {
+        id: "d",
+        text: "0.93Ω"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "BS 7671, Chapter 41, Table 41.4 gives maximum earth fault loop impedance values for a 5-second disconnection time. it is much higher than for a 0.4- second disconnection time, but the question asks for the maximum, hence 0.780 (uncorrected) is the right answer."
+  },
+
+  {
+    id: 155,
+    scenario: "",
+    Question: "What test method can be used to confirm polarity of a circuit?",
+    options: [
+      {
+        id: "a",
+        text: "Continuity of R1 + R2"
+      },
+      {
+        id: "b",
+        text: "Insulation resistance"
+      },
+      {
+        id: "c",
+        text: "c.\tLong lead continuity"
+      },
+      {
+        id: "d",
+        text: "RCD integral button"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "GN3, Section 2.6.12 describes polarity testing, which used the same set-up as for continuity Test Method 1, i.e. (R1+R2)."
+  },
+
+{
+    id: 156,
+    scenario: "",
+    Question: "What test voltage is used when testing the separation of circuits between the supply and load conductors at the point where a SELV transformer would be connected?",
+    options: [
+      {
+        id: "a",
+        text: "500V"
+      },
+      {
+        id: "b",
+        text: "250V"
+      },
+      {
+        id: "c",
+        text: "50V"
+      },
+      {
+        id: "d",
+        text: "1000V"
+      }
+    ],
+    correctAnswer: "A",
+    explanation: "GN3, Section 2.6.7, Table 2.9  describes the tests to be performed where electrical separation exists. You must always base the test voltage on the highest voltage present which, in this case is the supply (230V AC)."
+  },
+
+   {
+    id: 157,
+    scenario: "",
+    Question: "What would be the approximate disconnection time for a 32A Type B circuit breaker to BS EN 60898 if an earth fault loop impedance of 2.87Ω was recorded?",
+    options: [
+      {
+        id: "a",
+        text: "5 seconds"
+      },
+      {
+        id: "b",
+        text: "0.4 seconds"
+      },
+      {
+        id: "c",
+        text: "20 seconds"
+      },
+      {
+        id: "d",
+        text: "60 seconds"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "We know that the maximum Zs for a circuit protected by a B32 circuit breaker is non (corrected), so a reading of 2.87Ω would not allow disconnection within the required time. First you must calculate the actual fault current using Ohm's Law: I = V/R = 230/2.87 = 80A Now you need to go to BS 7671, Appendix 3, Figure 3A4 (the overcurrent characteristics for a B-type 60898 circuit breaker). On the bottom row, find where 80A lies... it just happens to be the same vertical line that comes from the 16A curve. Next, project that line up until it intersects with the 32A curve, and then cross-reference it with the 'Time' axis. Between 10 and 100, each line represents to seconds. In this example, the intersection is at 60 seconds, which is the amount of time it will take the 32A circuit breaker to trip whilst only 80°A is flowing through it. The embedded table shows the amount of current required for each value of device to disconnect within the required disconnection time. A 32A requires 160A, which is what is known as the device's Ia"
+  },
+
+  {
+    id: 158,
+    scenario: "",
+    Question: "What is an appropriate method of verifying voltage drop?",
+    options: [
+      {
+        id: "a",
+        text: "R1+Rn) x 1.2 x Ib"
+      },
+      {
+        id: "b",
+        text: "(R1+Rn) x 1.2 x In"
+      },
+      {
+        id: "c",
+        text: "(R1+R2) x 1.2 x In"
+      },
+      {
+        id: "d",
+        text: "(R1+R2) x 1.2 x Ib"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "This is a knowledge-based answer. Voltage drop occurs when a machine (or other equipment) is drawing current from the supply, which itself is fed via the Line and Neutral conductors under normal operating conditions. When measuring the resistance of (R1 + Rn), this will be done under isolation with a low-reading ohmmeter, therefore the conductors will be at ambient temperature, i.e. 20°C.  When voltage drop occurs, it does so when the conductors are under load (Ib), and so the conductor operating temperature will rise to 70°C.  To determine what the (R1 + Rn) measurement at 20°C would be at 70°C, you need to use the factor given in GN3, Appendix B, Table B3, which is 1.20 for a 70°C thermoplastic insulated cable.  Put all that together and it gives the formula: (R1+Rn) x 1.2 x Ib"
+  },
+
+{
+    id: 159,
+    scenario: "",
+    Question: "What is the MAXIMUM permitted voltage drop, in percent, for a lighting circuit in a domestic dwelling?",
+    options: [
+      {
+        id: "a",
+        text: "11.5%"
+      },
+      {
+        id: "b",
+        text: "3%"
+      },
+      {
+        id: "c",
+        text: "5%"
+      },
+      {
+        id: "d",
+        text: "6.9%"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "BS 7671, Appendix 4, Section 6.4, Table 4Ab. Reference can also be found in OSG, Appendix F, beneath the heading 'Voltage Drop'."
+  },
+
+  {
+    id: 160,
+    scenario: "",
+    Question: "A 1.5mm2 cpc is connected to a socket outlet and has a measured resistance of 0.8Ω What would be the resistance of R2 for this circuit if another 1.5mm2 conductor, of the same length, was run and connected in parallel?",
+    options: [
+      {
+        id: "a",
+        text: "0.4Ω"
+      },
+      {
+        id: "b",
+        text: "0.8Ω"
+      },
+      {
+        id: "c",
+        text: "1.2Ω"
+      },
+      {
+        id: "d",
+        text: "1.6Ω"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "This is a knowledge-based question that relies on you knowing the effects of resistance where cross-sectional area and length are concerned. If you doubled the cross-sectional area, but didn't increase the length, then the resistance would half. By calculation, there are two similar resistances in parallel, therefore we can take the value of resistance of one conductor and divide it by the total number of conductors in parallel of that resistance, i.e: 0.8/2=0.4Ω"
   }
+
+
+
+
+
+
+
+
+ 
 
 
 
