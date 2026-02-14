@@ -7,6 +7,7 @@ const optionList = [
   { value: '40-80', label: 'Questions 41-80' },
   { value: '80-120', label: 'Questions 81-120' },
   { value: '120-160', label: 'Questions 121-160' },
+  { value: '160-200', label: 'Questions 161-200' },
 ];
 
 const LandingPage = ({ activeOption, setActiveOption, onStarted }) => {
