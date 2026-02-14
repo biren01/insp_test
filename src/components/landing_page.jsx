@@ -14,7 +14,7 @@ const LandingPage = ({ activeOption, setActiveOption, onStarted }) => {
   //const [lastupdated, setLastupdated] = useState("");
 
   return (
-    <div className="landing-page">
+    <div className="landing-page" style={{ backgroundColor: 'cadetblue', minHeight: '100vh' }}>
       <header className="landing-page-header">
         <h1>Initial and Periodic Electrical Installation Inspection and Testing</h1>
         <h2>2391-52 Quiz</h2>
@@ -25,6 +25,9 @@ const LandingPage = ({ activeOption, setActiveOption, onStarted }) => {
            onChange={(selectedOption) => setActiveOption(selectedOption?.value)}
            value={optionList.find(options => options.value === activeOption) || null}
            />
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+          <img src="/shared/images/landingpage.jpg" alt="Landing Page" style={{ maxWidth: '100%', height: 'auto' }} />
         </div>
         <button className="get-started-button" onClick={onStarted}>Get Started  </button>
     </div>
