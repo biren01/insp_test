@@ -1,6 +1,7 @@
 
 import "./landing_page.css";
 import Select from 'react-select';
+import landingImage from '../shared/images/landingpage.jpg';
 
 const optionList = [
   { value: '0-40', label: 'Questions 1-40' },
@@ -27,7 +28,7 @@ const LandingPage = ({ activeOption, setActiveOption, onStarted }) => {
            />
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
-          <img src="/shared/images/landingpage.jpg" alt="Landing Page" style={{ maxWidth: '100%', height: 'auto' }} />
+          <img src={landingImage} alt="Landing Page" style={{ maxWidth: '100%', height: 'auto' }} />
         </div>
         <button className="get-started-button" onClick={onStarted}>Get Started  </button>
     </div>
