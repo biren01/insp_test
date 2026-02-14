@@ -23,7 +23,7 @@ function App() {
   const { startIndex, endIndex } = getQuestionRange(activeOption);
 
   // Filter questions based on selected range
-  const questions = QUESTIONS.slice(startIndex, endIndex).map((q) => ({ ...q, question: q.Question }));
+  const questions = QUESTIONS.slice(startIndex, endIndex).map((q) => ({ ...q, question: q.question || q.Question }));
 
   const handleAnswer = (questionId, selectedOption) => {
     setAnswers(prev => ({
