@@ -14,8 +14,9 @@ const Quiz = ({ questions, currentQuestion, answers, onAnswer, onNext, onPreviou
 
       <div className="question-container">
         {currentQ.scenario && <div className="scenario-text">{currentQ.scenario}</div>}
+         {currentQ.image && <img src={currentQ.image} alt="Question" style={{maxWidth: '100%', marginTop: '1rem'}} />}
         <h2 className="question-text">{currentQ.question}</h2>
-        {currentQ.image && <img src={currentQ.image} alt="Question" style={{maxWidth: '100%', marginTop: '1rem'}} />}
+       {/* {currentQ.image && <img src={currentQ.image} alt="Question" style={{maxWidth: '100%', marginTop: '1rem'}} />}*/}
         
         <div className="options-container">
           

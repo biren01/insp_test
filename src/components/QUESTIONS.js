@@ -1,3 +1,8 @@
+import q24_28 from '../shared/images/q24_28.png';
+import q29_31 from '../shared/images/q29_31.png';
+
+
+
 export const QUESTIONS = [
     {
         id: 1,
@@ -104,7 +109,7 @@ export const QUESTIONS = [
         id:8 ,
         scenario: "",
         question: "What is the minimum level of IP protection, for basic protection, when inspecting the accessible horizontal top surface of a distribution board ?",
-        image: "/images/q8.png",
+        
             options: [
             {id: 'a', text: "IP2X."},
             {id: 'b', text: "IP4X."},
@@ -135,7 +140,7 @@ export const QUESTIONS = [
         id:10 ,
         scenario: "",
         question: " What is an example of a defect which is classified C1?",
-        image: "/images/q10.png",
+        
             options: [
             {id: 'a', text: "A missing lid on trunking containing sheathed cables."},
             {id: 'b', text: " A light switch having a damaged front exposing internal parts."},
@@ -1255,7 +1260,7 @@ export const QUESTIONS = [
     id: 75,
     scenario: "",
     question: "What needs to be verified with regard to the mobile catering consumer unit?",
-    image: "/images/q75.png",
+    
     options: [
       {
         id: "a",
@@ -1595,7 +1600,7 @@ export const QUESTIONS = [
     scenario: "A section of galvanized trunking is to be inspected as part of periodic inspection and testing of a factory.\
                The trunking contains unsheathed low voltage cables.",
     question: "What is the minimum IP rating for the bottom horizontal surface of the trunking?",
-    image: "/images/q87.png",
+    
     options: [
       {
         id: "a",
@@ -4228,5 +4233,445 @@ export const QUESTIONS = [
     correctAnswer: "a",
     explanation: "The value of R1+R2 for this circuit is ultimately used to determine the total earth fault loop impedance (Zs). Even if the impedance is measured directly, the R1+R2 would be used to verify this result as accurate."
   },
+
+  {
+    id: 184,
+    scenario: "An insulation resistance test is to be carried out on a single-phase distribution board within a new dwelling containing the following circuits, protected by individual RCBOs:",
+    image:q24_28,
+    Question: "Why are 230 V circuits tested using 500 Y?",
+    options: [
+      {
+        id: "a",
+        text: "To put the conductors under more stress than normal."
+      },
+      {
+        id: "b",
+        text: "To put the insulation under more stress than normal."
+      },
+      {
+        id: "c",
+        text: "To ensure no voltage drop occurs over the circuit."
+      },
+      {
+        id: "d",
+        text: "To ensure sensitive circuit equipment is not damaged."
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "The purpose of an insulation resistance test is to ensure that the insulation is suitable for the circuit voltage and the resistance is high enough to prevent current flowing between conductors. By using a voltage higher than normal to test with, any weak, defective insulation would be exposed by the higher voltage. Insulation testing is like pressure testing the insulation around the conductor."
+  },
+  {
+    id: 185,
+    scenario: "An insulation resistance test is to be carried out on a single-phase distribution board within a new dwelling containing the following circuits, protected by individual RCBOs:",
+    image:q24_28,
+    Question: "How does Guidance Note 3 suggest this test is carried out?",
+    options: [
+      {
+        id: "a",
+        text: "By testing each circuit individually."
+      },
+      {
+        id: "b",
+        text: "By testing lighting circuits, then power."
+      },
+      {
+        id: "c",
+        text: "By testing the whole installation."
+      },
+      {
+        id: "d",
+        text: "By testing upstairs then downstairs."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "Guidance Note 3 suggests that simple installations, containing no distribution circuits, should preferably be tested as a whole."
+  },
+  {
+    id: 186,
+    scenario: "An insulation resistance test is to be carried out on a single-phase distribution board within a new dwelling containing the following circuits, protected by individual RCBOs:",
+    image:q24_28,
+    Question: "What is the likely reason for a reading, between line and neutral, of 0.03 MO?",
+    options: [
+      {
+        id: "a",
+        text: "An earth fault."
+      },
+      {
+        id: "b",
+        text: "A neon indicator."
+      },
+      {
+        id: "c",
+        text: "A spur in the ring."
+      },
+      {
+        id: "d",
+        text: "A loose connection."
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "When a neon indicator isn't isolated, it is likely to give a reading between line and neutral. As neon indicators have a typical resistance of 33 kO, this would be displayed as 0.03 MO."
+  },
+  {
+    id: 187,
+    scenario: "An insulation resistance test is to be carried out on a single-phase distribution board within a new dwelling containing the following circuits, protected by individual RCBOs:",
+    image:q24_28,
+    Question: "What action is taken regarding the PIR sensor?",
+    options: [
+      {
+        id: "a",
+        text: "The sensor is removed and the cables bridged."
+      },
+      {
+        id: "b",
+        text: "The sensor is removed and the cables left open."
+      },
+      {
+        id: "c",
+        text: "The test is carried out with the PIR connected."
+      },
+      {
+        id: "d",
+        text: "The test is carried out using a higher voltage."
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "Equipment which is vulnerable to insulation testing should be removed from the circuit and the cables bridged so the remainder of the circuit, after the PIR, is tested at the same time."
+  },
+
+  {
+    id: 188,
+    scenario: "An insulation resistance test is to be carried out on a single-phase distribution board within a new dwelling containing the following circuits, protected by individual RCBOs:",
+    image:q24_28,
+    Question: "What is the minimum permitted value of insulation resistance for this installation?",
+    options: [
+      {
+        id: "a",
+        text: "0.5 M Ohms"
+      },
+      {
+        id: "b",
+        text: "10 M Ohms"
+      },
+      {
+        id: "c",
+        text: "15 M Ohms"
+      },
+      {
+        id: "d",
+        text: "2.0 M Ohms"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "Table 61 in BS 7671 Part 6 gives minimum insulation resistance values. The minimum permitted value for circuits having a nominal voltage up to 500 V, with the exception of SELV and PELV, is 1.0M Ohms."
+  },
+  {
+    id: 189,
+    scenario: "A test of Prospective Fault Current (/pf) is to be undertaken on the installation shown in the image.",
+    image:q29_31,
+    Question: "Why is this test carried out?",
+    options: [
+      {
+        id: "a",
+        text: "To ensure that all disconnection times are met."
+      },
+      {
+        id: "b",
+        text: "To ensure all circuits have additional protection."
+      },
+      {
+        id: "c",
+        text: "To ensure devices will safely disconnect the lowest fault."
+      },
+      {
+        id: "d",
+        text: "To ensure devices will safely disconnect any fault."
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "The reason an lpf test is undertaken is to ensure that all protective devices can safely disconnect the maximum fault current at any one point in the installation. If a value of lpf exceeded the rated short circuit capacity of any device, the device could either blow up or, in the case of switching devices, weld the contacts together."
+  },
+
+  {
+    id: 190,
+    scenario: "A test of Prospective Fault Current (Ipf) is to be undertaken on the installation shown in the image.",
+    image:q29_31,
+    Question: "At the origin of DB 1, the maximum lpf was recorded as 8 kA. Where else must the test be undertaken within the installation?",
+    options: [
+      {
+        id: "a",
+        text: "DB3 only."
+      },
+      {
+        id: "b",
+        text: "DB2 and DB3."
+      },
+      {
+        id: "c",
+        text: "DB2 only."
+      },
+      {
+        id: "d",
+        text: "Nowhere else."
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "As DB 2 is single-phase and the single-phase lpf will be approximately half the three-phase value recorded at the origin. As a result, it is not necessary to test DB2 as lpf will only reduce within the installation and the capacity at DB2 are sufficient for 4 kA. DB3 however, has devices with a capacity of 6 kA and is threephase, so the test would need to be done there to ensure the lpf has reduced to a value less than 6 kA at that point."
+  },
+  {
+    id: 191,
+    scenario: "A test of Prospective Fault Current (Ipf) is to be undertaken on the installation shown in the image.",
+    image:q29_31,
+    Question: "Which terminals would the test be undertaken between, at the main switch of D81, if the test was carried out using a singlephase test instrument and the installation isolated?",
+    options: [
+      {
+        id: "a",
+        text: "On the load side between each line and neutral."
+      },
+      {
+        id: "b",
+        text: "On the load side between each line and earth."
+      },
+      {
+        id: "c",
+        text: "On the supply side between each line and neutral."
+      },
+      {
+        id: "d",
+        text: "On the supply side between each line and earth."
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "As the installation is three-phase, the test only needs to be carried out between live conductors as the maximum lpf will occur between lines at 400 V. The largest value obtained between each line and neutral is then, as a guide, doubled to reflect this."
+  },
+  {
+    id: 192,
+    scenario: "A range of tests are to be undertaken on a single-phase distribution board containing 30 mA RCBOs to BS EN 61009, which are protecting circuits in a bathroom.",
+    Question: "Why are these RCBOs fitted?",
+    options: [
+      {
+        id: "a",
+        text: "To meet the requirements for additional protection."
+      },
+      {
+        id: "b",
+        text: "To meet the requirements for SELV."
+      },
+      {
+        id: "c",
+        text: "To meet the requirements for electrical separation."
+      },
+      {
+        id: "d",
+        text: "To meet the requirements for supplementary protection."
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "Circuits supplying equipment in bathrooms must have additional protection using an RCD having a residual current setting not exceeding 30 mA."
+  },
+
+  {
+    id: 193,
+    scenario: "A range of tests are to be undertaken on a single-phase distribution board containing 30 mA RCBOs to BS EN 61009, which are protecting circuits in a bathroom.",
+    Question: "What test current is applied not too sensitive? to the RCBOs to check that they are ",
+    options: [
+      {
+        id: "a",
+        text: "15 mA"
+      },
+      {
+        id: "b",
+        text: "30 mA"
+      },
+      {
+        id: "c",
+        text: "50 mA"
+      },
+      {
+        id: "d",
+        text: "150 mA"
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "A test at 0.5 x 1.6.N is carried out to ensure the device does not trip. This ensures the device is not too sensitive."
+  },
+  {
+    id: 194,
+    scenario: "A range of tests are to be undertaken on a single-phase distribution board containing 30 mA RCBOs to BS EN 61009, which are protecting circuits in a bathroom.",
+    Question: "What is the time the RCBOs must trip within when tested at 1 X IΔN?",
+    options: [
+      {
+        id: "a",
+        text: "10ms"
+      },
+      {
+        id: "b",
+        text: "40 ms"
+      },
+      {
+        id: "c",
+        text: "200 ms"
+      },
+      {
+        id: "d",
+        text: "300 ms"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "In order to comply with the requirements of the BS EN standard and for additional protection, the RCD must trip within 300 ms when tested at its residual current setting."
+  },
+  {
+    id: 195,
+    scenario: "A range of tests are to be undertaken on a single-phase distribution board containing 30 mA RCBOs to BS EN 61009, which are protecting circuits in a bathroom.",
+    Question: "Why is a test button fitted to RCBOs?",
+    options: [
+      {
+        id: "a",
+        text: "To remove the need for instrument tests during periodic testing."
+      },
+      {
+        id: "b",
+        text: "To prove that the circuit has a suitable earth resistance."
+      },
+      {
+        id: "c",
+        text: "To remove the need for insulation testing as it monitors this."
+      },
+      {
+        id: "d",
+        text: "To keep mechanical parts free from seizure by regular use."
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "By operating the test button at regular intervals, the tripping of the device keeps internal parts free of seizure. If the mechanical parts are not exercised regularly, there is a risk that the parts may stick to a point where the small energy produced by a small residual current may not be enough to unjam the mechanism when needed during faults."
+  },
+  {
+    id: 196,
+    scenario: "",
+    Question: "What value is the Line to cpc loop value divided by when calculating an expected R1+R2 during a ring final circuit continuity test?",
+    options: [
+      {
+        id: "a",
+        text: "8"
+      },
+      {
+        id: "b",
+        text: "6"
+      },
+      {
+        id: "c",
+        text: "4"
+      },
+      {
+        id: "d",
+        text: "2"
+      }
+    ],
+    correctAnswer: "c",
+    explanation: "When carrying out the test, the value of the line loop, added to the cpc loop is divided by 4 to give an expected value at each socket-outlet connected on the ring. "
+  },
+
+  {
+    id: 197,
+    scenario: "",
+    Question: "What value of Ze would be the maximum expected where an installation forms part of a TN-C-S earthing arrangement?",
+    options: [
+      {
+        id: "a",
+        text: "0.10 ohm"
+      },
+      {
+        id: "b",
+        text: "0.35 ohm"
+      },
+      {
+        id: "c",
+        text: "o.80 ohm"
+      },
+      {
+        id: "d",
+        text: "21.0 ohm"
+      }
+    ],
+    correctAnswer: "b",
+    explanation: "The DNO commonly quotes their maximum earth fault loop impedance, external to the installation, to be below 0.35 0. Although they may not be able to keep values below this, they do declare this as the maximum."
+  },
+  {
+    id: 198,
+    scenario: "",
+    Question: "An earth electrode resistance test produced the following results:  Test 1 - 52 ohm, Test 2 - 55 ohm, Test3 - 51 ohm;  jWhat would be recorded as the earth electrode resistance?",
+    options: [
+      {
+        id: "a",
+        text: "158 ohm"
+      },
+      {
+        id: "b",
+        text: "102 Ohm"
+      },
+      {
+        id: "c",
+        text: "55.0 Ohm"
+      },
+      {
+        id: "d",
+        text: "52.7 Ohm"
+      }
+    ],
+    correctAnswer: "d",
+    explanation: "52 +55 + 51 = 52.667  ohm( or52.7 Ohm"
+  },
+  {
+    id: 199,
+    scenario: "",
+    Question: "What, in particular, is verified during a polarity test on an ES lampholder having a metallic thread?",
+    options: [
+      {
+        id: "a",
+        text: "The centre contact is connected to the line conductor."
+      },
+      {
+        id: "b",
+        text: "The screw thread is connected to the line conductor."
+      },
+      {
+        id: "c",
+        text: "The centre contact is connected to the earth conductor."
+      },
+      {
+        id: "d",
+        text: "The screw thread is connected to the earth conductor."
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "On ES lampholders, the polarity test is carried out to confirm that the line conductor is connected to the centre contact. If the line conductor was connected to the metal thread, a person could receive an electric shock when replacing a lamp."
+  },
+
+   {
+    id: 200,
+    scenario: "",
+    Question: "What factor directly affects voltage drop?",
+    options: [
+      {
+        id: "a",
+        text: "Circuit load current."
+      },
+      {
+        id: "b",
+        text: "Protective device rating."
+      },
+      {
+        id: "c",
+        text: "Number of switches used."
+      },
+      {
+        id: "d",
+        text: "Length of earthing conductor."
+      }
+    ],
+    correctAnswer: "a",
+    explanation: "The voltage drop is directly affected by circuit length, conductor csa and the circuit load current"
+  }
+
 
   ];  
